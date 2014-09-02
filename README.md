@@ -20,5 +20,19 @@ TODO: Test system and library benchmarks will be documented here.
 
 License
 ----------
-License will maybe change later according to the helper libs. But be sure that it will be free as a bird :D
+License will maybe change later according to the helper libs. But be sure that it will be free as a bird.
+
+
+Status
+----------
+* NOTE: **It's far beyond working beware of this code** !!!!
+* Schematron parsing is done with  SAX parser and a **custom handler**. So very limited tag set is working for now. And we are planning to limit it as much as we can.
+Here is the list,
+  * schema
+  * ns
+  * title - Maybe we will remove this from data structure.
+  * let
+  * pattern
+  * rule
+  * assert
 
