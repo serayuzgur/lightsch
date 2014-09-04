@@ -7,7 +7,11 @@ public class Assert {
 	private String message;
 
 	public Assert(Attributes attributes) {
-		setTest(attributes.getValue("test"));
+		//TODO: functions in xpath node queries are node supported. ex. /a/b/normalize-space(c)
+		test = attributes.getValue("test");
+		test = test.replaceAll("/[a-z,A-Z]*\\:?+[a-z,A-Z]+\\-?[a-z,A-Z]+\\(([^)]+)[\\)]{1}","/$1");
+
+		test = "not(" + test + ")";
 	}
 
 	public String getTest() {
@@ -15,11 +19,6 @@ public class Assert {
 	}
 
 	public void setTest(String test) {
-		//TODO: functions in xpath node queries are node supported. ex. /a/b/normalize-space(c)
-		test = test.replaceAll("/[a-z,A-Z]*\\:?+[a-z,A-Z]+\\-?[a-z,A-Z]+\\(([^)]+)[\\)]{1}","/$1");
-
-		test = "not(" + test + ")";
-
 		this.test = test;
 	}
 
