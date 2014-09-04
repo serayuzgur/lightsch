@@ -25,7 +25,8 @@ License will maybe change later according to the helper libs. But be sure that i
 
 Status
 ----------
-* NOTE: **It's far beyond working beware of this code** !!!!
+* Variable declarations on VTD-XML is not working so we put a string replacer for *<let>* declarations. __*(see: com.mebitech.lightsch.parser.pojo.Assert.setText())*__
+* Functions in xpath node queries are node supported. **ex. /a/b/normalize-space(c) It will be converted to /a/b/c**
 * Schematron parsing is done with  SAX parser and a **custom handler**. So very limited tag set is working for now. And we are planning to limit it as much as we can.
 Here is the list,
   * schema

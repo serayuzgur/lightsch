@@ -8,6 +8,7 @@ public class SchematronParserTest {
 	@Test
 	public void testParse() throws Exception {
 
+
 		Schematron schematron = SchematronParser.parse(SchematronParserTest.class.getClassLoader().getResourceAsStream("edefter_unsigned_yevmiye.sch"));
 
 

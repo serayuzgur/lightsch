@@ -22,9 +22,13 @@ public class Rule extends Scope {
 	}
 
 	public boolean addAssert(Assert assert_) {
+
 		if (!getContext().equals("/"))
 			assert_.setTest(getContext() + "[" + assert_.getTest() + "]");
 
+		//TODO: Remove after xpath2.0 support
+		if (assert_.getTest().contains("matches"))
+			return false;
 		return asserts.add(assert_);
 	}
 }

@@ -41,8 +41,7 @@ public class SchematronHandler extends DefaultHandler {
 			currentRule.setContext(attributes.getValue("context"));
 			currentPattern.addRule(currentRule);
 		}else if (atSchema && currentRule != null && isEquals(qName, "assert")) {
-			currentAssert = new Assert();
-			currentAssert.setTest(attributes.getValue("test"));
+			currentAssert = new Assert(attributes);
 			currentRule.addAssert(currentAssert);
 		}
 
