@@ -1,5 +1,6 @@
 package com.mebitech.lightsch.parser.pojo;
 
+import com.mebitech.lightsch.parser.XpathUtils;
 import org.xml.sax.Attributes;
 
 public class Let {
@@ -12,7 +13,7 @@ public class Let {
 
 	public Let(String name, String value) {
 		this.name = name;
-		this.value = value;
+		this.value = XpathUtils.removeFuncInPaths(value);
 	}
 
 	public String getName() {

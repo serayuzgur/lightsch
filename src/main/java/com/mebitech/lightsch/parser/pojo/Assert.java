@@ -1,5 +1,6 @@
 package com.mebitech.lightsch.parser.pojo;
 
+import com.mebitech.lightsch.parser.XpathUtils;
 import org.xml.sax.Attributes;
 
 public class Assert {
@@ -7,11 +8,14 @@ public class Assert {
 	private String message;
 
 	public Assert(Attributes attributes) {
-		//TODO: functions in xpath node queries are node supported. ex. /a/b/normalize-space(c)
-		test = attributes.getValue("test");
-		test = test.replaceAll("/[a-z,A-Z]*\\:?+[a-z,A-Z]+\\-?[a-z,A-Z]+\\(([^)]+)[\\)]{1}","/$1");
+		this(attributes.getValue("test"));
+	}
 
-		test = "not(" + test + ")";
+	public Assert(String test) {
+		//TODO: functions in xpath node queries are node supported. ex. /a/b/normalize-space(c)
+		test = XpathUtils.removeFuncInPaths(test);
+		test = XpathUtils.wrapWithNotFunc(test);
+		this.test = test;
 	}
 
 	public String getTest() {

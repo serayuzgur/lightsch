@@ -32,7 +32,7 @@ public class SchematronValidator {
 						System.out.println("--------------------------");
 
 						replaceLetVariables(schematron.getSchema(),rule,anAssert);
-						System.out.println(i++ + ": Test : " + anAssert.getTest());
+						System.out.println(++i + ": Test : " + anAssert.getTest());
 						ap.selectXPath(anAssert.getTest());
 
 						if (!isValidXPath(ap, vn)) {
