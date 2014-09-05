@@ -3,16 +3,23 @@ package com.mebitech.lightsch.validator;
 
 import com.mebitech.lightsch.parser.pojo.*;
 import com.ximpleware.*;
+import org.apache.log4j.Logger;
 
 import java.net.URL;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class SchematronValidator {
+	private static final Logger LOGGER = Logger.getLogger(SchematronValidator.class);
 
 
-	public static String validate(Schematron schematron, URL xmlUrl) throws XPathParseException, NavException, XPathEvalException {
+	public static List<Assert> validate(Schematron schematron, URL xmlUrl) throws XPathParseException, NavException, XPathEvalException {
 
+		List<Assert> asserts = new LinkedList<Assert>();
 		VTDGen vg = new VTDGen();
+		LOGGER.debug("Validating...");
+		LOGGER.info("Parsing : " + xmlUrl.getPath());
 		if (vg.parseFile(xmlUrl.getPath(), true)) {
 			VTDNav vn = vg.getNav();
 			AutoPilot ap = new AutoPilot();
@@ -21,6 +28,7 @@ public class SchematronValidator {
 			ap.bind(vn);
 			//Traverse  patterns
 			int i = 0;
+			LOGGER.info("Checking Started...");
 			for (Pattern pattern : schematron.getSchema().getPatterns()) {
 
 				//Traverse rules  and set context limitations
@@ -29,15 +37,13 @@ public class SchematronValidator {
 //					addLetDeclerations(schematron.getSchema(), rule, ap);
 					//Test Asserts with replacing let variables.
 					for (Assert anAssert : rule.getAsserts()) {
-						System.out.println("--------------------------");
-
-						replaceLetVariables(schematron.getSchema(),rule,anAssert);
-						System.out.println(++i + ": Test : " + anAssert.getTest());
+						replaceLetVariables(schematron.getSchema(), rule, anAssert);
+						i++;
 						ap.selectXPath(anAssert.getTest());
-
 						if (!isValidXPath(ap, vn)) {
-							System.out.println("Context : " + rule.getContext());
-							System.out.println(anAssert.getMessage());
+							LOGGER.error("Assert #" + i + " Failed: " + anAssert.getTest());
+							LOGGER.error("\t" + anAssert.getMessage());
+							asserts.add(anAssert);
 						}
 					}
 				}
@@ -45,12 +51,11 @@ public class SchematronValidator {
 
 				ap.resetXPath();
 			}
-
-
+			LOGGER.info("Checking Finished.");
 		}
 
 
-		return "o";
+		return asserts;
 
 	}
 
@@ -84,7 +89,6 @@ public class SchematronValidator {
 
 	private static boolean isValidXPath(AutoPilot ap, VTDNav vn) throws NavException {
 		try {
-
 			int index = 0;
 			int i = 0;
 			AtomicInteger type = new AtomicInteger(); // 0 evalXpath 1 boolean 2 number 3 string
@@ -93,8 +97,6 @@ public class SchematronValidator {
 			while (checkExp(ap, type)) {
 				i++;
 			}
-
-			System.out.println("count : " + i);
 			return i < 1;
 
 		} catch (Exception e) {

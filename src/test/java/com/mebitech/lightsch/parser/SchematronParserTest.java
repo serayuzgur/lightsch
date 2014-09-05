@@ -9,10 +9,10 @@ public class SchematronParserTest {
 	public void testParse() throws Exception {
 
 
-		Schematron schematron = SchematronParser.parse(SchematronParserTest.class.getClassLoader().getResourceAsStream("edefter_unsigned_yevmiye.sch"));
+		Schematron schematron = SchematronParser.parse(SchematronParserTest.class.getClassLoader().getResourceAsStream("testSch.xml"));
 
 
 		System.out.println(schematron.getSchema().getTitle());
-		SchematronParser.parse(SchematronParserTest.class.getClassLoader().getResourceAsStream("universalTests.sch"));
+		SchematronParser.parse(SchematronParserTest.class.getClassLoader().getResourceAsStream("universalTests.xml"));
 	}
 }

@@ -155,7 +155,7 @@
 			<assert test="gl-bus:totalDebit = gl-bus:totalCredit">gl-bus:totalDebit elemanının değeri gl-bus:totalCredit elemanının değerine eşit olmalıdır.</assert> 
 			<assert test="gl-bus:totalDebit = sum(gl-cor:entryDetail[gl-cor:debitCreditCode = 'D' or gl-cor:debitCreditCode = 'debit']/xs:decimal(gl-cor:amount))">gl-bus:totalDebit değeri, gl-cor:entryDetail elemanı içerisindeki gl-cor:debitCreditCode değeri 'D' ve ya 'debit' olan gl-cor:amount değelerinin toplamına eşit olmalıdır.</assert>
 			<assert test="gl-bus:totalCredit = sum(gl-cor:entryDetail[gl-cor:debitCreditCode = 'C' or gl-cor:debitCreditCode = 'credit']/xs:decimal(gl-cor:amount))">gl-bus:totalCredit değeri, gl-cor:entryDetail elemanı içerisindeki gl-cor:debitCreditCode değeri 'C' ve ya 'credit' olan gl-cor:amount değerlerinin toplamına eşit olmalıdır.</assert>
-			
+
 		</rule>
 	</pattern>
 
