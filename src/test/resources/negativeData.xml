@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/yevmiye.xslt"?>
+<edefter:defter xmlns:edefter="http://www.edefter.gov.tr"
+                xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
+                xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.edefter.gov.tr ../xsd/edefter.xsd">
+    <xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance"
+                xmlns:iso639="http://www.xbrl.org/2005/iso639"
+                xmlns:link="http://www.xbrl.org/2003/linkbase"
+                xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2006-10-25"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2006-10-25"
+                xmlns:gl-plt="http://www.xbrl.org/int/gl/plt/2006-10-25"
+                xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+                xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2006-10-25 ../xsd/2006-10-25/plt/case-c-b/gl-plt-2006-10-25.xsd">
+        <link:schemaRef xlink:href="../xsd/2006-10-25/plt/case-c-b/gl-plt-2006-10-25.xsd"
+                        xlink:type="simple"/>
+        <xbrli:context id="journal_context">
+            <xbrli:entity>
+                <xbrli:identifier scheme="http://www.gib.gov.tr">1231231233</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+                <xbrli:instant>2014-06-06</xbrli:instant>
+            </xbrli:period>
+        </xbrli:context>
+        <xbrli:unit id="try">
+            <xbrli:measure>iso4217:TRY</xbrli:measure>
+        </xbrli:unit>
+        <xbrli:unit id="countable">
+            <xbrli:measure>xbrli:pure</xbrli:measure>
+        </xbrli:unit>
+        <gl-cor:accountingEntries>
+            <gl-cor:documentInfo>
+                <gl-cor:entriesType contextRef="journal_context">*hatalı yer*</gl-cor:entriesType>
+                <gl-cor:uniqueID contextRef="journal_context">*hatalı yer*</gl-cor:uniqueID>
+                <gl-cor:language contextRef="journal_context">iso639:tr</gl-cor:language>
+                <gl-cor:creationDate contextRef="journal_context">*hatalı yer*</gl-cor:creationDate>
+                <gl-bus:creator contextRef="journal_context">Sinan Selimoglu</gl-bus:creator>
+                <gl-cor:entriesComment contextRef="journal_context">2014-06-01 - 2014-06-30 arası Mebitech firmasına ait Yevmiye defteri</gl-cor:entriesComment>
+                <!--<gl-cor:periodCoveredStart contextRef="journal_context">2014-06-31</gl-cor:periodCoveredStart>-->
+                <!--<gl-cor:periodCoveredEnd contextRef="journal_context">2014-06-01</gl-cor:periodCoveredEnd>-->
+                <gl-bus:sourceApplication contextRef="journal_context"> </gl-bus:sourceApplication>
+            </gl-cor:documentInfo>
+            <gl-cor:entityInformation>
+                <gl-bus:entityPhoneNumber>
+                    <gl-bus:phoneNumberDescription contextRef="journal_context">direct</gl-bus:phoneNumberDescription>
+                    <gl-bus:phoneNumber contextRef="journal_context"> </gl-bus:phoneNumber>
+                </gl-bus:entityPhoneNumber>
+                <gl-bus:entityFaxNumberStructure>
+                    <gl-bus:entityFaxNumber contextRef="journal_context">1231234512</gl-bus:entityFaxNumber>
+                </gl-bus:entityFaxNumberStructure>
+                <gl-bus:entityEmailAddressStructure>
+                    <gl-bus:entityEmailAddress contextRef="journal_context"> </gl-bus:entityEmailAddress>
+                </gl-bus:entityEmailAddressStructure>
+                <gl-bus:organizationIdentifiers>
+                    <gl-bus:organizationIdentifier contextRef="journal_context"> </gl-bus:organizationIdentifier>
+                    <gl-bus:organizationDescription contextRef="journal_context"> </gl-bus:organizationDescription>
+                </gl-bus:organizationIdentifiers>
+                <gl-bus:organizationAddress>
+                    <!--<gl-bus:organizationBuildingNumber contextRef="journal_context">j</gl-bus:organizationBuildingNumber>-->
+                    <!--<gl-bus:organizationAddressStreet contextRef="journal_context">123</gl-bus:organizationAddressStreet>-->
+                    <!--<gl-bus:organizationAddressStreet2 contextRef="journal_context">Bursa</gl-bus:organizationAddressStreet2>-->
+                    <!--<gl-bus:organizationAddressCity contextRef="journal_context">Bursa</gl-bus:organizationAddressCity>-->
+                    <!--<gl-bus:organizationAddressZipOrPostalCode contextRef="journal_context">123123</gl-bus:organizationAddressZipOrPostalCode>-->
+                    <!--<gl-bus:organizationAddressCountry contextRef="journal_context">Bursa</gl-bus:organizationAddressCountry>-->
+                </gl-bus:organizationAddress>
+                <gl-bus:entityWebSite>
+                    <!--<gl-bus:webSiteURL contextRef="journal_context">asd.mebitech.com</gl-bus:webSiteURL>-->
+                </gl-bus:entityWebSite>
+                <gl-bus:businessDescription contextRef="journal_context"> </gl-bus:businessDescription>
+                <!--<gl-bus:fiscalYearStart contextRef="journal_context">2014-01-31</gl-bus:fiscalYearStart>-->
+                <!--<gl-bus:fiscalYearEnd contextRef="journal_context">2014-12-01</gl-bus:fiscalYearEnd>-->
+                <gl-bus:accountantInformation>
+                    <gl-bus:accountantName contextRef="journal_context"> </gl-bus:accountantName>
+                    <gl-bus:accountantAddress>
+                        <gl-bus:accountantBuildingNumber contextRef="journal_context"/>
+                        <gl-bus:accountantStreet contextRef="journal_context"/>
+                        <gl-bus:accountantAddressStreet2 contextRef="journal_context"/>
+                        <gl-bus:accountantCity contextRef="journal_context">7987</gl-bus:accountantCity>
+                        <gl-bus:accountantCountry contextRef="journal_context">7897</gl-bus:accountantCountry>
+                        <gl-bus:accountantZipOrPostalCode contextRef="journal_context"/>
+                    </gl-bus:accountantAddress>
+                    <gl-bus:accountantEngagementTypeDescription contextRef="journal_context"> </gl-bus:accountantEngagementTypeDescription>
+                    <gl-bus:accountantContactInformation>
+                        <gl-bus:accountantContactPhone>
+                            <gl-bus:accountantContactPhoneNumberDescription contextRef="journal_context">controller</gl-bus:accountantContactPhoneNumberDescription>
+                            <gl-bus:accountantContactPhoneNumber contextRef="journal_context"/>
+                        </gl-bus:accountantContactPhone>
+                        <gl-bus:accountantContactFax>
+                            <gl-bus:accountantContactFaxNumber contextRef="journal_context"/>
+                        </gl-bus:accountantContactFax>
+                        <gl-bus:accountantContactEmail>
+                            <gl-bus:accountantContactEmailAddress contextRef="journal_context"/>
+                        </gl-bus:accountantContactEmail>
+                    </gl-bus:accountantContactInformation>
+                </gl-bus:accountantInformation>
+            </gl-cor:entityInformation>
+        </gl-cor:accountingEntries>
+    </xbrli:xbrl>
+</edefter:defter>
