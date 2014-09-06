@@ -25,8 +25,8 @@ License will maybe change later according to the helper libs. But be sure that i
 
 Status
 ----------
-* Variable declarations on VTD-XML is not working so we put a string replacer for *<let>* declarations. __*(see: com.mebitech.lightsch.parser.pojo.Assert())*__
-* Functions in xpath node queries are node supported. **ex. /a/b/normalize-space(c) It will be converted to /a/b/c**
+* Variable declarations on VTD-XML is  (maybe) not working so we put a string replacer for *<let>* declarations. __*(see: com.mebitech.lightsch.validator.SchematronValidator.replaceLetVariables())*__
+* Functions in xpath node queries are node supported. **ex. /a/b/normalize-space(c) It will be converted to /a/b/c** __*(see: com.mebitech.lightsch.parser.XpathUtils)*__
 * **matches** function is not working. Asserts which use this func. automatically eliminated by validator. 
 * Schematron parsing is done with  SAX parser and a **custom handler**. So very limited tag set is working for now. And we are planning to limit it as much as we can.
 Here is the list,
