@@ -31,7 +31,7 @@ public class SchematronValidatorTest {
         System.out.println("Failed Size: " + failed.size());
         System.out.println("*******************************************************************\n\n");
 
-        assert failed.isEmpty();
+        assert failed.size() == 84;
 
     }
 

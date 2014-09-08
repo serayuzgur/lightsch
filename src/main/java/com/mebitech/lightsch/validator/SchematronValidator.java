@@ -36,14 +36,25 @@ public class SchematronValidator {
 
 //					addLetDeclerations(schematron.getSchema(), rule, ap);
 					//Test Asserts with replacing let variables.
-					for (Assert anAssert : rule.getAsserts()) {
-						replaceLetVariables(schematron.getSchema(), rule, anAssert);
-						i++;
-						ap.selectXPath(anAssert.getTest());
-						if (!isValidXPath(ap, vn)) {
-							LOGGER.error("Assert #" + i + " Failed: " + anAssert.getTest());
-							LOGGER.error("\t" + anAssert.getMessage());
-							asserts.add(anAssert);
+
+					// Check rule context;
+					ap.selectXPath(rule.getContext());
+					if (!checkContext(ap)) {
+						LOGGER.error("Rule " + rule.getContext() + " Failed ");
+						asserts.addAll(rule.getAsserts());
+						ap.resetXPath();
+						continue;
+
+					} else {
+						for (Assert anAssert : rule.getAsserts()) {
+							replaceLetVariables(schematron.getSchema(), rule, anAssert);
+							i++;
+							ap.selectXPath(anAssert.getTest());
+							if (!isValidXPath(ap, vn)) {
+								LOGGER.error("Assert #" + i + " Failed: " + anAssert.getTest());
+								LOGGER.error("\t" + anAssert.getMessage());
+								asserts.add(anAssert);
+							}
 						}
 					}
 				}
@@ -97,12 +108,26 @@ public class SchematronValidator {
 			while (checkExp(ap, type)) {
 				i++;
 			}
-			return i < 1;
+			return i > 0;
 
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
 		}
+	}
+
+	private static boolean checkContext(AutoPilot ap) {
+		int index = -1;
+		try {
+			index = ap.evalXPath();
+		} catch (XPathEvalException e) {
+			e.printStackTrace();
+			return false;
+		} catch (NavException e) {
+			e.printStackTrace();
+			return false;
+		}
+		return index > -1;
 	}
 
 	private static boolean checkExp(AutoPilot ap, AtomicInteger type) {
@@ -112,8 +137,9 @@ public class SchematronValidator {
 				try {
 					index = ap.evalXPath();
 					type.set(0);
+					return index == -1;
 				} catch (XPathEvalException e) {
-					index = ap.evalXPathToNumber() > 0 ? 1 : -1;
+					index = ap.evalXPathToNumber() > 0 ? -1 : 1;
 					type.set(1);
 				} catch (NavException e) {
 					ap.evalXPathToNumber();
@@ -122,6 +148,8 @@ public class SchematronValidator {
 			case 0:
 				try {
 					index = ap.evalXPath();
+					return false;
+
 				} catch (XPathEvalException e) {
 					e.printStackTrace();
 					index = -1;
