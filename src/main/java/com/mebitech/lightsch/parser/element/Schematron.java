@@ -1,4 +1,4 @@
-package com.mebitech.lightsch.parser.pojo;
+package com.mebitech.lightsch.parser.element;
 
 public class Schematron  {
 	private Schema schema;

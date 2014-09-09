@@ -1,7 +1,7 @@
 package com.mebitech.lightsch.validator;
 
 
-import com.mebitech.lightsch.parser.pojo.*;
+import com.mebitech.lightsch.parser.element.*;
 import com.ximpleware.*;
 import org.apache.log4j.Logger;
 

@@ -1,6 +1,6 @@
-package com.mebitech.lightsch.parser.pojo;
+package com.mebitech.lightsch.parser.element;
 
-import com.mebitech.lightsch.parser.XpathUtils;
+import com.mebitech.lightsch.parser.XPathUtil;
 import org.xml.sax.Attributes;
 
 public class Assert {
@@ -13,9 +13,16 @@ public class Assert {
 
 	public Assert(String test) {
 		//TODO: functions in xpath node queries are node supported. ex. /a/b/normalize-space(c)
-		test = XpathUtils.removeFuncInPaths(test);
-		test = XpathUtils.wrapWithNotFunc(test);
+		test = normalizeXPath(test);
+
 		this.test = test;
+	}
+
+	public String normalizeXPath(String test) {
+		test = XPathUtil.convertMatchesToStringLength(test);
+		test = XPathUtil.removeFuncInPaths(test);
+		test = XPathUtil.wrapWithNotFunc(test);
+		return test;
 	}
 
 	public String getTest() {

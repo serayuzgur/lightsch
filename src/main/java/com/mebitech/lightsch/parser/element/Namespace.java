@@ -1,4 +1,4 @@
-package com.mebitech.lightsch.parser.pojo;
+package com.mebitech.lightsch.parser.element;
 
 import org.xml.sax.Attributes;
 

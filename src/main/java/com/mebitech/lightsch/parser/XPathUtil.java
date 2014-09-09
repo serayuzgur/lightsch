@@ -1,6 +1,6 @@
 package com.mebitech.lightsch.parser;
 
-public class XpathUtils {
+public class XPathUtil {
 
 
 	public static String removeFuncInPaths(String original) {
@@ -10,5 +10,15 @@ public class XpathUtils {
 
 	public static String wrapWithNotFunc (String original){
 		return "not(" + original + ")";
+	}
+
+	public static String convertMatchesToStringLength(String test) {
+		if(!test.contains("matches"))
+			return test;
+
+
+
+
+		return test;
 	}
 }

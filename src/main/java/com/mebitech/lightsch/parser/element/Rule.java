@@ -1,4 +1,4 @@
-package com.mebitech.lightsch.parser.pojo;
+package com.mebitech.lightsch.parser.element;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -26,9 +26,6 @@ public class Rule extends Scope {
 		if (!getContext().equals("/"))
 			assert_.setTest(getContext() + "[" + assert_.getTest() + "]");
 
-		//TODO: Remove after xpath2.0 support
-		if (assert_.getTest().contains("matches"))
-			return false;
 		return asserts.add(assert_);
 	}
 }

@@ -1,6 +1,6 @@
 package com.mebitech.lightsch.parser;
 
-import com.mebitech.lightsch.parser.pojo.Schematron;
+import com.mebitech.lightsch.parser.element.Schematron;
 import org.junit.Test;
 
 public class SchematronParserTest {

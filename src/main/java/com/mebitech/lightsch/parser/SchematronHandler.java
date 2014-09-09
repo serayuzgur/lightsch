@@ -1,6 +1,6 @@
 package com.mebitech.lightsch.parser;
 
-import com.mebitech.lightsch.parser.pojo.*;
+import com.mebitech.lightsch.parser.element.*;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
