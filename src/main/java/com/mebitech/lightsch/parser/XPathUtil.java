@@ -1,12 +1,23 @@
 package com.mebitech.lightsch.parser;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
-import java.util.Arrays;
-import java.util.regex.Pattern;
+import com.mebitech.lightsch.parser.element.Assert;
+import com.mebitech.lightsch.parser.element.Let;
+import com.mebitech.lightsch.parser.element.Rule;
+import com.mebitech.lightsch.parser.element.Schema;
 
 public class XPathUtil {
 
+	public static void replaceLetVariables(Schema schema, Rule rule, Assert anAssert) {
+		String path = anAssert.getTest();
+		for (Let let : schema.getLets()) {
+			path = path.replaceAll("\\$" + let.getName(), let.getValue());
+		}
+		for (Let let : rule.getLets()) {
+			path = path.replaceAll("\\$" + let.getName(), let.getValue());
+		}
+
+		anAssert.setTest(path);
+	}
 
 	public static String removeFuncInPaths(String original) {
 		String modified = original.replaceAll("/[a-z,A-Z]*\\:?[a-z,A-Z]+\\-?[a-z,A-Z]+\\(([^)]+)[\\)]{1}", "/$1");
