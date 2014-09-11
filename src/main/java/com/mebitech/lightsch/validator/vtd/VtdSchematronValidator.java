@@ -1,6 +1,7 @@
 package com.mebitech.lightsch.validator.vtd;
 
 
+import com.mebitech.lightsch.parser.XPathUtil;
 import com.mebitech.lightsch.parser.element.*;
 import com.mebitech.lightsch.validator.SchematronValidationException;
 import com.mebitech.lightsch.validator.SchematronValidator;
@@ -12,7 +13,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class VtdSchematronValidator implements SchematronValidator {
+public class VtdSchematronValidator extends SchematronValidator {
 	private static final Logger LOGGER = Logger.getLogger(VtdSchematronValidator.class);
 
 
@@ -35,22 +36,20 @@ public class VtdSchematronValidator implements SchematronValidator {
 
 				//Traverse rules  and set context limitations
 				for (Rule rule : pattern.getRules()) {
-
-					//Test Asserts with replacing let variables.
-
 					// Check rule context;
 					try {
 						ap.selectXPath(rule.getContext());
 					} catch (XPathParseException e) {
 						e.printStackTrace();
-						ruleFailedAction(asserts, ap, rule);
+						ruleFailedAction(asserts, rule);
+						ap.resetXPath();
 					}
 					if (!checkContext(ap)) {
-						ruleFailedAction(asserts, ap, rule);
-
+						ruleFailedAction(asserts, rule);
+						ap.resetXPath();
 					} else {
 						for (Assert anAssert : rule.getAsserts()) {
-							replaceLetVariables(schematron.getSchema(), rule, anAssert);
+							XPathUtil.replaceLetVariables(schematron.getSchema(), rule, anAssert);
 							i++;
 							try {
 								ap.selectXPath(anAssert.getTest());
@@ -80,30 +79,6 @@ public class VtdSchematronValidator implements SchematronValidator {
 
 		return asserts;
 
-	}
-
-	private void assertFailedAction(List<Assert> asserts, int i, Assert anAssert) {
-		LOGGER.error("Assert #" + i + " Failed: " + anAssert.getTest());
-		LOGGER.error("\t" + anAssert.getMessage());
-		asserts.add(anAssert);
-	}
-
-	private void ruleFailedAction(List<Assert> asserts, AutoPilot ap, Rule rule) {
-		LOGGER.error("Rule " + rule.getContext() + " Failed ");
-		asserts.addAll(rule.getAsserts());
-		ap.resetXPath();
-	}
-
-	private static void replaceLetVariables(Schema schema, Rule rule, Assert anAssert) {
-		String path = anAssert.getTest();
-		for (Let let : schema.getLets()) {
-			path = path.replaceAll("\\$" + let.getName(), let.getValue());
-		}
-		for (Let let : rule.getLets()) {
-			path = path.replaceAll("\\$" + let.getName(), let.getValue());
-		}
-
-		anAssert.setTest(path);
 	}
 
 	private static void addLetDeclerations(Schema schema, Rule rule, AutoPilot ap) throws XPathParseException {

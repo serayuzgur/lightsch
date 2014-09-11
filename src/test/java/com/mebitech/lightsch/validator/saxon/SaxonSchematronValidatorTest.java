@@ -14,7 +14,7 @@ public class SaxonSchematronValidatorTest {
     public void testValidate() throws Exception {
         Schematron schematron = SchematronParser.parse(SaxonSchematronValidatorTest.class.getClassLoader().getResourceAsStream("testSch.xml"));
         URL xmlPath = SaxonSchematronValidatorTest.class.getClassLoader().getResource("positiveData.xml");
-        List<Assert> failed = SaxonSchematronValidator.validate(schematron, xmlPath);
+        List<Assert> failed = new SaxonSchematronValidator().validate(schematron, xmlPath);
         assert failed.isEmpty();
 
 
@@ -25,7 +25,7 @@ public class SaxonSchematronValidatorTest {
 
         Schematron schematron = SchematronParser.parse(SaxonSchematronValidatorTest.class.getClassLoader().getResourceAsStream("testSch.xml"));
         URL xmlPath = SaxonSchematronValidatorTest.class.getClassLoader().getResource("negativeData.xml");
-        List<Assert> failed = SaxonSchematronValidator.validate(schematron, xmlPath);
+        List<Assert> failed = new SaxonSchematronValidator().validate(schematron, xmlPath);
 
         System.out.println("\n\n*******************************************************************");
         System.out.println("Failed Size: " + failed.size());

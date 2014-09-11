@@ -18,7 +18,7 @@ import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
 
-public class SaxonSchematronValidator  implements SchematronValidator {
+public class SaxonSchematronValidator  extends SchematronValidator {
 	private static final Logger LOGGER = Logger.getLogger(SaxonSchematronValidator.class);
 	public static final String OBJECT_MODEL_SAXON = "http://saxon.sf.net/jaxp/xpath/om";
 
@@ -42,17 +42,18 @@ public class SaxonSchematronValidator  implements SchematronValidator {
 		MapNamespaceContext namespaceContext = new MapNamespaceContext(schematron.getSchema().getNamespaces());
 		xpath.setNamespaceContext(namespaceContext);
 
-
+		LOGGER.info("Checking Started...");
+		int i = 0;
 		for (Pattern pattern : schematron.getSchema().getPatterns()) {
 			for (Rule rule : pattern.getRules()) {
+
 				for (Assert anAssert : rule.getAsserts()) {
 					XPathUtil.replaceLetVariables(schematron.getSchema(), rule, anAssert);
-					String result = "false";
+					String result;
 					try {
 						result = xpath.evaluate(anAssert.getTest(), source);
 						if (!result.equals(""))
-							asserts.add(anAssert);
-
+							assertFailedAction(asserts,++i,anAssert);
 					} catch (XPathExpressionException e) {
 						e.printStackTrace();
 						asserts.add(anAssert);
@@ -60,9 +61,8 @@ public class SaxonSchematronValidator  implements SchematronValidator {
 				}
 			}
 		}
-
+		LOGGER.info("Checking Finished.");
 		return asserts;
 	}
-
 
 }
