@@ -7,6 +7,18 @@ import com.mebitech.lightsch.parser.element.Schema;
 
 public class XPathUtil {
 
+	public static String modifyXPath4Vtd(String original){
+		// Matches function is not available in VTD so rewrite them
+		original = XPathUtil.convertMatchesToStringLength(original);
+		//Functions in xpath node queries are node supported. ex. /a/b/normalize-space(c)
+		original = XPathUtil.removeFuncInPaths(original);
+		return XPathUtil.wrapWithNotFunc(original);
+	}
+
+	public static String modifyXPath4Saxon(String original){
+		return XPathUtil.wrapWithNotFunc(original);
+	}
+
 	public static void replaceLetVariables(Schema schema, Rule rule, Assert anAssert) {
 		String path = anAssert.getTest();
 		for (Let let : schema.getLets()) {

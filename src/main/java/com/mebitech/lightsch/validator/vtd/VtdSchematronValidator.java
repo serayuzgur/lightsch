@@ -49,6 +49,7 @@ public class VtdSchematronValidator extends SchematronValidator {
 						ap.resetXPath();
 					} else {
 						for (Assert anAssert : rule.getAsserts()) {
+							anAssert.setTest(XPathUtil.modifyXPath4Vtd(anAssert.getTest()));
 							XPathUtil.replaceLetVariables(schematron.getSchema(), rule, anAssert);
 							i++;
 							try {

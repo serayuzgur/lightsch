@@ -48,6 +48,7 @@ public class SaxonSchematronValidator  extends SchematronValidator {
 			for (Rule rule : pattern.getRules()) {
 
 				for (Assert anAssert : rule.getAsserts()) {
+					anAssert.setTest(XPathUtil.modifyXPath4Saxon(anAssert.getTest()));
 					XPathUtil.replaceLetVariables(schematron.getSchema(), rule, anAssert);
 					String result;
 					try {

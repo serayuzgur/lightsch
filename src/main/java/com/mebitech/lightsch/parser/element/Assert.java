@@ -12,9 +12,6 @@ public class Assert {
 	}
 
 	public Assert(String test) {
-		//TODO: functions in xpath node queries are node supported. ex. /a/b/normalize-space(c)
-		test =  normalizeXPath(test);
-
 		this.test = test;
 	}
 
