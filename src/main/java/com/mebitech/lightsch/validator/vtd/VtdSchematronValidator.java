@@ -1,4 +1,4 @@
-package com.mebitech.lightsch.validator;
+package com.mebitech.lightsch.validator.vtd;
 
 
 import com.mebitech.lightsch.parser.element.*;
@@ -10,8 +10,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class SchematronValidator {
-    private static final Logger LOGGER = Logger.getLogger(SchematronValidator.class);
+public class VtdSchematronValidator {
+    private static final Logger LOGGER = Logger.getLogger(VtdSchematronValidator.class);
 
 
     public static List<Assert> validate(Schematron schematron, URL xmlUrl) throws XPathParseException, NavException, XPathEvalException {

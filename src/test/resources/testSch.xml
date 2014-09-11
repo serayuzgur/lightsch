@@ -11,7 +11,8 @@
 	<ns prefix="ds" uri="http://www.w3.org/2000/09/xmldsig#" />
 	<ns prefix="xades" uri="http://uri.etsi.org/01903/v1.3.2#" />
 	<ns prefix="edefter" uri="http://www.edefter.gov.tr" />
-	
+	<ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema" />
+
 	<title>Yevmiye defteri dokumanlarını kontrol etmek için gerekli olan schematron kuralları</title>
 	
 	<let name="periodCoveredStart" value="/edefter:defter/xbrli:xbrl/gl-cor:accountingEntries/gl-cor:documentInfo/gl-cor:periodCoveredStart"/>
@@ -36,7 +37,7 @@
 			<assert test="count(gl-cor:accountingEntries) = 1 ">gl-cor:accountingEntries zorunlu bir elemandır.</assert>
 		</rule>
 		<rule context="/edefter:defter/xbrli:xbrl/xbrli:context/xbrli:entity/xbrli:identifier">
-			<assert test="matches(normalize-space(.) , '^[0-9]{10,11}$')">xbrli:identifier elemanına 10 haneli vergi kimlik numarası ve ya 11 haneli TC kimlik numarası yazılmalıdır.</assert>
+			<!--<assert test="matches(normalize-space(.) , '^[0-9]{10,11}$')">xbrli:identifier elemanına 10 haneli vergi kimlik numarası ve ya 11 haneli TC kimlik numarası yazılmalıdır.</assert>-->
 		</rule>		
 	</pattern>
 	

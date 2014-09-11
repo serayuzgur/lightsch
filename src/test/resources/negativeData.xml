@@ -31,7 +31,7 @@
         <gl-cor:accountingEntries>
             <gl-cor:documentInfo>
                 <gl-cor:entriesType contextRef="journal_context">journal</gl-cor:entriesType>
-                <gl-cor:uniqueID contextRef="journal_context">YEV2011040000</gl-cor:uniqueID>
+                <gl-cor:uniqueID contextRef="journal_context">!YEV2011040000</gl-cor:uniqueID>
                 <gl-cor:language contextRef="journal_context">iso639:tr</gl-cor:language>
                 <gl-cor:creationDate contextRef="journal_context">2014-07-23</gl-cor:creationDate>
                 <gl-bus:creator contextRef="journal_context">Ziya Atma</gl-bus:creator>
@@ -46,10 +46,10 @@
             <gl-cor:entityInformation>
                 <gl-bus:entityPhoneNumber>
                     <gl-bus:phoneNumberDescription contextRef="journal_context">Central</gl-bus:phoneNumberDescription>
-                    <gl-bus:phoneNumber contextRef="journal_context">2242242323</gl-bus:phoneNumber>
+                    <gl-bus:phoneNumber contextRef="journal_context">112242242323</gl-bus:phoneNumber>
                 </gl-bus:entityPhoneNumber>
                 <gl-bus:entityFaxNumberStructure>
-                    <gl-bus:entityFaxNumber contextRef="journal_context">2242242323</gl-bus:entityFaxNumber>
+                    <gl-bus:entityFaxNumber contextRef="journal_context">112242242323</gl-bus:entityFaxNumber>
                 </gl-bus:entityFaxNumberStructure>
                 <gl-bus:entityEmailAddressStructure>
                     <gl-bus:entityEmailAddress contextRef="journal_context">info@amebitech.com</gl-bus:entityEmailAddress>
@@ -135,8 +135,8 @@
                 <gl-cor:entryComment contextRef="journal_context">Reversal</gl-cor:entryComment>
                 <gl-bus:batchID contextRef="journal_context">00001</gl-bus:batchID>
                 <gl-bus:batchDescription contextRef="journal_context">A Branch</gl-bus:batchDescription>
-                <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">35.66</gl-bus:totalDebit>
-                <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">35.66</gl-bus:totalCredit>
+                <gl-bus:totalDebit contextRef="journal_context" decimals="INF2" unitRef="try">35.66</gl-bus:totalDebit>
+                <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">35.26</gl-bus:totalCredit>
                 <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1101</gl-cor:entryNumberCounter>
                 <gl-cor:entryDetail>
                     <gl-cor:lineNumber contextRef="journal_context">3440</gl-cor:lineNumber>

@@ -16,9 +16,6 @@ public class XPathUtil {
 		if(!test.contains("matches"))
 			return test;
 
-
-
-
-		return test;
+		return "false";
 	}
 }

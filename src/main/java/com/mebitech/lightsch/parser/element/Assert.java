@@ -13,14 +13,15 @@ public class Assert {
 
 	public Assert(String test) {
 		//TODO: functions in xpath node queries are node supported. ex. /a/b/normalize-space(c)
-		test = normalizeXPath(test);
+		test =  normalizeXPath(test);
 
 		this.test = test;
 	}
 
 	public String normalizeXPath(String test) {
-		test = XPathUtil.convertMatchesToStringLength(test);
-		test = XPathUtil.removeFuncInPaths(test);
+		//Open with VTD
+//		test = XPathUtil.convertMatchesToStringLength(test);
+//		test = XPathUtil.removeFuncInPaths(test);
 		test = XPathUtil.wrapWithNotFunc(test);
 		return test;
 	}
