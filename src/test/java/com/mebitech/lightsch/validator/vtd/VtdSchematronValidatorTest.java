@@ -13,7 +13,7 @@ public class VtdSchematronValidatorTest {
     @Test
     public void testValidate() throws Exception {
         Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("testSch.xml"));
-        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("positiveData.xml");
+        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("positiveBigData.xml");
         List<Assert> failed = new VtdSchematronValidator().validate(schematron, xmlPath);
         assert failed.isEmpty();
 
@@ -24,7 +24,7 @@ public class VtdSchematronValidatorTest {
     public void testBreak() throws Exception {
 
         Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("testSch.xml"));
-        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("negativeData.xml");
+        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("positiveData.xml");
         List<Assert> failed = new VtdSchematronValidator().validate(schematron, xmlPath);
 
         System.out.println("\n\n*******************************************************************");
