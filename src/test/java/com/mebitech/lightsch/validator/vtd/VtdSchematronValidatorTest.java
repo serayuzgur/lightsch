@@ -23,17 +23,16 @@ public class VtdSchematronValidatorTest {
     @Test
     public void testBreak() throws Exception {
 
+        long start = System.currentTimeMillis();
         Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("testSch.xml"));
-        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("positiveData.xml");
+        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("positiveBigData.xml");
         List<Assert> failed = new VtdSchematronValidator().validate(schematron, xmlPath);
+        long end = System.currentTimeMillis();
 
         System.out.println("\n\n*******************************************************************");
-        System.out.println("Failed Size: " + failed.size());
+        System.out.println("Failed Size: " + failed.size() + " finished in : " + (end - start) + " miliseconds");
         System.out.println("*******************************************************************\n\n");
 
-        assert failed.size() == 84;
-
+//        assert failed.size() == 84;
     }
-
-
 }

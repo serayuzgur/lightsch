@@ -11,7 +11,7 @@ import java.util.List;
 public abstract class SchematronValidator {
 
 	private static final Logger LOGGER = Logger.getLogger(SchematronValidator.class);
-	public abstract List<Assert> validate(Schematron schematron, URL xmlUrl) throws SchematronValidationException;
+	public abstract List<Assert> validate(Schematron schematron, URL xmlUrl) throws SchematronValidationException, InterruptedException;
 
 	protected void assertFailedAction(List<Assert> asserts, int i, Assert anAssert) {
 		LOGGER.error("Assert #" + i + " Failed: " + anAssert.getTest());

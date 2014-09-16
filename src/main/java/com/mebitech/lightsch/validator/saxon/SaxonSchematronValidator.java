@@ -53,7 +53,7 @@ public class SaxonSchematronValidator  extends SchematronValidator {
 					String result;
 					try {
 						result = xpath.evaluate(anAssert.getTest(), source);
-						if (!result.equals("false"))
+						if (!result.equals("true"))
 							assertFailedAction(asserts,++i,anAssert);
 					} catch (XPathExpressionException e) {
 						e.printStackTrace();

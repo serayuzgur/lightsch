@@ -11,27 +11,28 @@ import java.util.Map;
 
 public class MapNamespaceContext implements NamespaceContext {
 
-	private Map<String,String> prefixMap = new HashMap<>();
-	private Map<String,String> uriMap = new HashMap<>();
+    private Map<String, String> prefixMap = new HashMap<String, String>();
+    private Map<String, String> uriMap = new HashMap<String, String>();
 
-	public MapNamespaceContext(List<Namespace> namespaces){
-		for(Namespace ns : namespaces){
-			prefixMap.put(ns.getPrefix(), ns.getUri());
-			uriMap.put(ns.getUri(),ns.getPrefix());
-		}
-	}
-	@Override
-	public String getNamespaceURI(String prefix) {
-		return prefixMap.get(prefix);
-	}
+    public MapNamespaceContext(List<Namespace> namespaces) {
+        for (Namespace ns : namespaces) {
+            prefixMap.put(ns.getPrefix(), ns.getUri());
+            uriMap.put(ns.getUri(), ns.getPrefix());
+        }
+    }
 
-	@Override
-	public String getPrefix(String namespaceURI) {
-		return uriMap.get(namespaceURI);
-	}
+    @Override
+    public String getNamespaceURI(String prefix) {
+        return prefixMap.get(prefix);
+    }
 
-	@Override
-	public Iterator getPrefixes(String namespaceURI) {
-		return prefixMap.keySet().iterator();
-	}
+    @Override
+    public String getPrefix(String namespaceURI) {
+        return uriMap.get(namespaceURI);
+    }
+
+    @Override
+    public Iterator getPrefixes(String namespaceURI) {
+        return prefixMap.keySet().iterator();
+    }
 }

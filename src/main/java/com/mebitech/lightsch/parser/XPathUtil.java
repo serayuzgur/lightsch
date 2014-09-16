@@ -12,7 +12,7 @@ public class XPathUtil {
 		original = XPathUtil.convertMatchesToStringLength(original);
 		//Functions in xpath node queries are node supported. ex. /a/b/normalize-space(c)
 		original = XPathUtil.removeFuncInPaths(original);
-		return XPathUtil.wrapWithNotFunc(original);
+		return original;
 	}
 
 	public static String modifyXPath4Saxon(String original){
