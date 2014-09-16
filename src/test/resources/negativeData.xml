@@ -135,18 +135,18 @@
                 <gl-cor:entryComment contextRef="journal_context">Reversal</gl-cor:entryComment>
                 <gl-bus:batchID contextRef="journal_context">00001</gl-bus:batchID>
                 <gl-bus:batchDescription contextRef="journal_context">A Branch</gl-bus:batchDescription>
-                <gl-bus:totalDebit contextRef="journal_context" decimals="INF1" unitRef="try">35.66</gl-bus:totalDebit>
+                <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">35.26</gl-bus:totalDebit>
                 <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">35.66</gl-bus:totalCredit>
                 <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1101</gl-cor:entryNumberCounter>
                 <gl-cor:entryDetail>
                     <gl-cor:lineNumber contextRef="journal_context">3440</gl-cor:lineNumber>
                     <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1101</gl-cor:lineNumberCounter>
                     <gl-cor:account>
-                        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+                        <gl-cor:accountMainID contextRef="journal_context">120123</gl-cor:accountMainID>
                         <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
                         <gl-cor:accountSub>
                             <gl-cor:accountSubDescription contextRef="journal_context">TRANS OKYANUS DEN.ULS.TAS.DIS</gl-cor:accountSubDescription>
-                            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+                            <gl-cor:accountSubID contextRef="journal_context">12000000</gl-cor:accountSubID>
                         </gl-cor:accountSub>
                     </gl-cor:account>
                     <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">35.66</gl-cor:amount>
