@@ -7,40 +7,39 @@ import com.mebitech.lightsch.parser.element.Schema;
 
 public class XPathUtil {
 
-	public static String modifyXPath4Vtd(String original){
-		// Matches function is not available in VTD so rewrite them
-		original = XPathUtil.convertMatchesToStringLength(original);
-		//Functions in xpath node queries are node supported. ex. /a/b/normalize-space(c)
-		original = XPathUtil.removeFuncInPaths(original);
-		return original;
-	}
+    public static String modifyXPath4Vtd(String original) {
+        // Matches function is not available in VTD so rewrite them
+        original = XPathUtil.convertMatchesToStringLength(original);
+        //Functions in xpath node queries are node supported. ex. /a/b/normalize-space(c)
+        original = XPathUtil.removeFuncInPaths(original);
+        return XPathUtil.wrapWithNotFunc(original);
+    }
 
-	public static String modifyXPath4Saxon(String original){
-		return XPathUtil.wrapWithNotFunc(original);
-	}
+    public static String modifyXPath4Saxon(String original) {
+        return XPathUtil.wrapWithNotFunc(original);
+    }
 
-	public static void replaceLetVariables(Schema schema, Rule rule, Assert anAssert) {
-		String path = anAssert.getTest();
-		for (Let let : schema.getLets()) {
-			path = path.replaceAll("\\$" + let.getName(), let.getValue());
-		}
-		for (Let let : rule.getLets()) {
-			path = path.replaceAll("\\$" + let.getName(), let.getValue());
-		}
+    public static void replaceLetVariables(Schema schema, Rule rule, Assert anAssert) {
+        String path = anAssert.getTest();
+        for (Let let : schema.getLets()) {
+            path = path.replaceAll("\\$" + let.getName(), let.getValue());
+        }
+        for (Let let : rule.getLets()) {
+            path = path.replaceAll("\\$" + let.getName(), let.getValue());
+        }
 
-		anAssert.setTest(path);
-	}
+        anAssert.setTest(path);
+    }
 
-	public static String removeFuncInPaths(String original) {
-		String modified = original.replaceAll("/[a-z,A-Z]*\\:?[a-z,A-Z]+\\-?[a-z,A-Z]+\\(([^)]+)[\\)]{1}", "/$1");
-		return modified;
-	}
+    public static String removeFuncInPaths(String original) {
+        return original.replaceAll("/[a-z,A-Z]*\\:?[a-z,A-Z]+\\-?[a-z,A-Z]+\\(([^)]+)[\\)]{1}", "/$1");
+    }
 
-	public static String wrapWithNotFunc (String original){
-		return "not(" + original + ")";
-	}
+    public static String wrapWithNotFunc(String original) {
+        return "not(" + original + ")";
+    }
 
-	public static String convertMatchesToStringLength(String test) {
+    public static String convertMatchesToStringLength(String test) {
 
         if (test.contains("matches")) {
 
@@ -65,7 +64,7 @@ public class XPathUtil {
                     test = "string-length" + "(" + normalizeSpace + ")" + " >= " + startOffset + " and " + "string-length" + "(" + normalizeSpace + ")" + " <= " + endOffset;
                 } else {
                     String length = lengthRange[0];
-                    test = "string-length" + "(" + normalizeSpace + ")" + " == " + length;
+                    test = "string-length" + "(" + normalizeSpace + ")" + " = " + length;
                 }
 
             }
