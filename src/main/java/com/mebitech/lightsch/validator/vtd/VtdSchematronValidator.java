@@ -22,7 +22,7 @@ public class VtdSchematronValidator extends SchematronValidator {
         }
     }
 
-    public List<Assert> validate(Schematron schematron, URL xmlUrl) throws SchematronValidationException, InterruptedException {
+    public List<Assert> validate(Schematron schematron, URL xmlUrl) throws SchematronValidationException, InterruptedException, XPathParseException, NavException, XPathEvalException {
 
         List<Assert> asserts = new LinkedList<Assert>();
         VTDGen vg = new VTDGen();
@@ -30,36 +30,28 @@ public class VtdSchematronValidator extends SchematronValidator {
         LOGGER.info("Parsing : " + xmlUrl.getPath());
         if (vg.parseFile(xmlUrl.getPath(), true)) {
             VTDNav vn = vg.getNav();
-            AutoPilot ap = new AutoPilot();
+            AutoPilot ap = new AutoPilot(vn);
             AutoPilot ap2 = new AutoPilot(vn);
             // Enter namespaces to xpath engine
             addDeclarations(schematron, ap);
             addDeclarations(schematron, ap2);
-            ap.bind(vn);
-            ap2.bind(vn);
             //Traverse  patterns
-            int i = 0;
             LOGGER.info("Checking Started...");
             for (Pattern pattern : schematron.getSchema().getPatterns()) {
-                //Traverse rules  and set context limitations
+                LOGGER.debug("Pattern Name : " + pattern.getId());
                 for (Rule rule : pattern.getRules()) {
-                    try {
-                        ap.selectXPath(rule.getContext());
-                    } catch (XPathParseException e) {
-                        e.printStackTrace();
-                    }
+                    LOGGER.debug("Evaluating Xpath Expression : " + rule.getContext());
+                    ap.selectXPath(rule.getContext());
                     for (Assert anAssert : rule.getAsserts()) {
                         anAssert.setTest(XPathUtil.modifyXPath4Vtd(anAssert.getTest()));
                         XPathUtil.replaceLetVariables(schematron.getSchema(), rule, anAssert);
-                        i++;
                         try {
                             ap2.selectXPath(anAssert.getTest());
                             List<Assert> asserts_ = doTest(ap, ap2, vn, anAssert);
                             asserts.addAll(asserts_);
-                        } catch (XPathParseException e) {
-                            e.printStackTrace();
+                        } finally {
+                            ap.resetXPath();
                         }
-                        ap.resetXPath();
                     }
                 }
             }
@@ -79,33 +71,20 @@ public class VtdSchematronValidator extends SchematronValidator {
      * @param anAssert meaningless, just for log and assert list, could be remove later
      * @return A list with full of errors.
      */
-    private List<Assert> doTest(AutoPilot ap, AutoPilot ap2, VTDNav vn, Assert anAssert) {
+    private List<Assert> doTest(AutoPilot ap, AutoPilot ap2, VTDNav vn, Assert anAssert) throws NavException, XPathEvalException {
         List<Assert> asserts = new LinkedList<Assert>();
         int index;
-        int a = 0;
-        LOGGER.info("Started : " + anAssert.getTest());
-        try {
-            while ((index = ap.evalXPath()) != -1) {
-                if (!ap2.evalXPathToBoolean()) {
-                    LOGGER.error(" \n******** \n Error Occured! Index : " + index + " Expression Value "
-                            + vn.getXPathStringVal() + " Description  : " + anAssert.getMessage() + " \n********");
-                    a++;
-                    asserts.add(anAssert);
-                }
+        while ((index = ap.evalXPath()) != -1) {
+            if (!ap2.evalXPathToBoolean()) {
+                // Error occurred if we are here
+                anAssert.setElementFragment(vn.getElementFragment());
+                anAssert.setIndex(index);
+                asserts.add(anAssert);
             }
-        } catch (XPathEvalException e) {
-            e.printStackTrace();
-        } catch (NavException e) {
-            e.printStackTrace();
         }
-        LOGGER.info("Error count : " + a);
         return asserts;
     }
 
-    //
-    /*
-    Unused Code parts
-     */
 //    private static boolean isValidXPath(AutoPilot ap, AutoPilot ap2, VTDNav vn, Assert assert_) throws NavException {
 //        try {
 //            int i = 0;

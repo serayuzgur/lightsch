@@ -22,11 +22,9 @@ public class VtdSchematronValidatorTest {
 
     @Test
     public void testBreak() throws Exception {
-
-
-        Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("testSch.xml"));
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 3; i++) {
             long start = System.currentTimeMillis();
+            Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("testSch.xml"));
             URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("positiveBigData.xml");
             List<Assert> failed = new VtdSchematronValidator().validate(schematron, xmlPath);
             long end = System.currentTimeMillis();
