@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/yevmiye.xslt"?>
+<edefter:defter xmlns:edefter="http://www.edefter.gov.tr"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.edefter.gov.tr ../xsd/edefter.xsd">
+    <xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance"
+                xmlns:iso639="http://www.xbrl.org/2005/iso639"
+                xmlns:link="http://www.xbrl.org/2003/linkbase"
+                xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2006-10-25"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2006-10-25"
+                xmlns:gl-plt="http://www.xbrl.org/int/gl/plt/2006-10-25"
+                xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+                xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2006-10-25 ../xsd/2006-10-25/plt/case-c-b/gl-plt-2006-10-25.xsd">
+        <link:schemaRef xlink:href="../xsd/2006-10-25/plt/case-c-b/gl-plt-2006-10-25.xsd"
+                        xlink:type="simple"/>
+        <xbrli:context id="journal_context">
+            <xbrli:entity>
+                <xbrli:identifier scheme="http://www.gib.gov.tr">1231231212</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+                <xbrli:instant>2014-09-16</xbrli:instant>
+            </xbrli:period>
+        </xbrli:context>
+        <xbrli:unit id="try">
+            <xbrli:measure>iso4217:TRY</xbrli:measure>
+        </xbrli:unit>
+        <xbrli:unit id="countable">
+            <xbrli:measure>xbrli:pure</xbrli:measure>
+        </xbrli:unit>
+        <gl-cor:accountingEntries>
+            <gl-cor:documentInfo>
+                <gl-cor:entriesType contextRef="journal_context">journal</gl-cor:entriesType>
+                <gl-cor:uniqueID contextRef="journal_context">YEV2013000001</gl-cor:uniqueID>
+                <gl-cor:language contextRef="journal_context">iso639:tr</gl-cor:language>
+                <gl-cor:creationDate contextRef="journal_context">2014-09-16</gl-cor:creationDate>
+                <gl-bus:creator contextRef="journal_context">Sinan Selimoglu</gl-bus:creator>
+                <gl-cor:entriesComment contextRef="journal_context">01-05-2013 - 16-05-2013 arasına ait 123 Yevmiye defteri         </gl-cor:entriesComment>
+                <gl-cor:periodCoveredStart contextRef="journal_context">2013-05-01</gl-cor:periodCoveredStart>
+                <gl-cor:periodCoveredEnd contextRef="journal_context">2013-05-16</gl-cor:periodCoveredEnd>
+                <gl-bus:sourceApplication contextRef="journal_context">6130734288##MEBITECH BİLİŞİM BİLGİSAYAR HİZ. DAN. SAN.TİC. LTD. ŞTİ.##Medy##1.0.0</gl-bus:sourceApplication>
+            </gl-cor:documentInfo>
+            <gl-cor:entityInformation>
+                <gl-bus:entityPhoneNumber>
+                    <gl-bus:phoneNumberDescription contextRef="journal_context">controller</gl-bus:phoneNumberDescription>
+                    <gl-bus:phoneNumber contextRef="journal_context">1231231231</gl-bus:phoneNumber>
+                </gl-bus:entityPhoneNumber>
+                <gl-bus:entityFaxNumberStructure>
+                    <gl-bus:entityFaxNumber contextRef="journal_context">1231231231</gl-bus:entityFaxNumber>
+                </gl-bus:entityFaxNumberStructure>
+                <gl-bus:entityEmailAddressStructure>
+                    <gl-bus:entityEmailAddress contextRef="journal_context">selimoglusinan@hotmail.com</gl-bus:entityEmailAddress>
+                </gl-bus:entityEmailAddressStructure>
+                <gl-bus:organizationIdentifiers>
+                    <gl-bus:organizationIdentifier contextRef="journal_context">123</gl-bus:organizationIdentifier>
+                    <gl-bus:organizationDescription contextRef="journal_context">Kurum Unvanı</gl-bus:organizationDescription>
+                </gl-bus:organizationIdentifiers>
+                <gl-bus:organizationAddress>
+                    <gl-bus:organizationBuildingNumber contextRef="journal_context">231/213</gl-bus:organizationBuildingNumber>
+                    <gl-bus:organizationAddressStreet contextRef="journal_context">123</gl-bus:organizationAddressStreet>
+                    <gl-bus:organizationAddressStreet2 contextRef="journal_context">123</gl-bus:organizationAddressStreet2>
+                    <gl-bus:organizationAddressCity contextRef="journal_context">213</gl-bus:organizationAddressCity>
+                    <gl-bus:organizationAddressZipOrPostalCode contextRef="journal_context">23</gl-bus:organizationAddressZipOrPostalCode>
+                    <gl-bus:organizationAddressCountry contextRef="journal_context">231</gl-bus:organizationAddressCountry>
+                </gl-bus:organizationAddress>
+                <gl-bus:entityWebSite>
+                    <gl-bus:webSiteURL contextRef="journal_context">231</gl-bus:webSiteURL>
+                </gl-bus:entityWebSite>
+                <gl-bus:businessDescription contextRef="journal_context">312</gl-bus:businessDescription>
+                <gl-bus:fiscalYearStart contextRef="journal_context">2013-02-01</gl-bus:fiscalYearStart>
+                <gl-bus:fiscalYearEnd contextRef="journal_context">2014-01-31</gl-bus:fiscalYearEnd>
+                <gl-bus:accountantInformation>
+                    <gl-bus:accountantName contextRef="journal_context">SM Sinan Selimoglu</gl-bus:accountantName>
+                    <gl-bus:accountantAddress>
+                        <gl-bus:accountantBuildingNumber contextRef="journal_context">1/1</gl-bus:accountantBuildingNumber>
+                        <gl-bus:accountantStreet contextRef="journal_context">seli</gl-bus:accountantStreet>
+                        <gl-bus:accountantAddressStreet2 contextRef="journal_context">sinan</gl-bus:accountantAddressStreet2>
+                        <gl-bus:accountantCity contextRef="journal_context">sinan</gl-bus:accountantCity>
+                        <gl-bus:accountantCountry contextRef="journal_context">sinan</gl-bus:accountantCountry>
+                        <gl-bus:accountantZipOrPostalCode contextRef="journal_context">1</gl-bus:accountantZipOrPostalCode>
+                    </gl-bus:accountantAddress>
+                    <gl-bus:accountantEngagementTypeDescription contextRef="journal_context">SMMM sözleşmesi,2011-09-11, 123123</gl-bus:accountantEngagementTypeDescription>
+                    <gl-bus:accountantContactInformation>
+                        <gl-bus:accountantContactPhone>
+                            <gl-bus:accountantContactPhoneNumberDescription contextRef="journal_context">bookkeeper</gl-bus:accountantContactPhoneNumberDescription>
+                            <gl-bus:accountantContactPhoneNumber contextRef="journal_context">1231231231</gl-bus:accountantContactPhoneNumber>
+                        </gl-bus:accountantContactPhone>
+                        <gl-bus:accountantContactFax>
+                            <gl-bus:accountantContactFaxNumber contextRef="journal_context">1231231231</gl-bus:accountantContactFaxNumber>
+                        </gl-bus:accountantContactFax>
+                        <gl-bus:accountantContactEmail>
+                            <gl-bus:accountantContactEmailAddress contextRef="journal_context">selimoglusinan@hotmail.com</gl-bus:accountantContactEmailAddress>
+                        </gl-bus:accountantContactEmail>
+                    </gl-bus:accountantContactInformation>
+                </gl-bus:accountantInformation>
+
+            </gl-cor:entityInformation>
+<gl-cor:entryHeader >
+    <gl-cor:enteredBy contextRef="journal_context">Gurkan ARITASI</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2013-05-01</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">10120407</gl-cor:entryNumber>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">303.50</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">303.50</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">42939</gl-cor:entryNumberCounter>
+    <gl-cor:entryDetail>
+        <gl-cor:lineNumber contextRef="journal_context">280486</gl-cor:lineNumber>
+        <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">42939</gl-cor:lineNumberCounter>
+        <gl-cor:account>
+            <gl-cor:accountMainID contextRef="journal_context">320</gl-cor:accountMainID>
+            <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+            <gl-cor:accountSub>
+                <gl-cor:accountSubDescription contextRef="journal_context">SATICILAR -GRUP DIŞI</gl-cor:accountSubDescription>
+                <gl-cor:accountSubID contextRef="journal_context">320000000</gl-cor:accountSubID>
+            </gl-cor:accountSub>
+        </gl-cor:account>
+        <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">303.50</gl-cor:amount>
+        <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+        <gl-cor:postingDate contextRef="journal_context">2013-05-01</gl-cor:postingDate>
+        <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+        <gl-cor:documentNumber contextRef="journal_context">382227</gl-cor:documentNumber>
+        <gl-cor:documentReference contextRef="journal_context">10120407</gl-cor:documentReference>
+        <gl-cor:documentDate contextRef="journal_context">2013-04-30</gl-cor:documentDate>
+        <gl-bus:paymentMethod contextRef="journal_context">Banka</gl-bus:paymentMethod>
+        <gl-cor:detailComment contextRef="journal_context">Eft - Havale</gl-cor:detailComment>
+    </gl-cor:entryDetail>
+
+    <gl-cor:entryDetail>
+        <gl-cor:lineNumber contextRef="journal_context">280487</gl-cor:lineNumber>
+        <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">42939</gl-cor:lineNumberCounter>
+        <gl-cor:account>
+            <gl-cor:accountMainID contextRef="journal_context">730</gl-cor:accountMainID>
+            <gl-cor:accountMainDescription contextRef="journal_context">GENEL URETIM GIDERLERI</gl-cor:accountMainDescription>
+            <gl-cor:accountSub>
+                <gl-cor:accountSubDescription contextRef="journal_context">GÜG-TELEFON VE POSTA  GİDERLERİ</gl-cor:accountSubDescription>
+                <gl-cor:accountSubID contextRef="journal_context">730000331</gl-cor:accountSubID>
+            </gl-cor:accountSub>
+        </gl-cor:account>
+        <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">228.30</gl-cor:amount>
+        <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+        <gl-cor:postingDate contextRef="journal_context">2013-05-01</gl-cor:postingDate>
+        <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+        <gl-cor:documentNumber contextRef="journal_context">382227</gl-cor:documentNumber>
+        <gl-cor:documentReference contextRef="journal_context">10120407</gl-cor:documentReference>
+        <gl-cor:documentDate contextRef="journal_context">2013-04-30</gl-cor:documentDate>
+        <gl-bus:paymentMethod contextRef="journal_context">Banka</gl-bus:paymentMethod>
+        <gl-cor:detailComment contextRef="journal_context">Eft - Havale</gl-cor:detailComment>
+    </gl-cor:entryDetail>
+
+    <gl-cor:entryDetail>
+        <gl-cor:lineNumber contextRef="journal_context">280488</gl-cor:lineNumber>
+        <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">42939</gl-cor:lineNumberCounter>
+        <gl-cor:account>
+            <gl-cor:accountMainID contextRef="journal_context">689</gl-cor:accountMainID>
+            <gl-cor:accountMainDescription contextRef="journal_context">DIGER O.DISI GID.VE ZARAR.(-)</gl-cor:accountMainDescription>
+            <gl-cor:accountSub>
+                <gl-cor:accountSubDescription contextRef="journal_context">DİĞER OLAĞANDIŞI VERGİLER (-)</gl-cor:accountSubDescription>
+                <gl-cor:accountSubID contextRef="journal_context">689000000</gl-cor:accountSubID>
+            </gl-cor:accountSub>
+        </gl-cor:account>
+        <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">35.10</gl-cor:amount>
+        <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+        <gl-cor:postingDate contextRef="journal_context">2013-05-01</gl-cor:postingDate>
+        <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+        <gl-cor:documentNumber contextRef="journal_context">382227</gl-cor:documentNumber>
+        <gl-cor:documentReference contextRef="journal_context">10120407</gl-cor:documentReference>
+        <gl-cor:documentDate contextRef="journal_context">2013-04-30</gl-cor:documentDate>
+        <gl-bus:paymentMethod contextRef="journal_context">Banka</gl-bus:paymentMethod>
+        <gl-cor:detailComment contextRef="journal_context">Eft - Havale</gl-cor:detailComment>
+    </gl-cor:entryDetail>
+
+    <gl-cor:entryDetail>
+        <gl-cor:lineNumber contextRef="journal_context">280489</gl-cor:lineNumber>
+        <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">42939</gl-cor:lineNumberCounter>
+        <gl-cor:account>
+            <gl-cor:accountMainID contextRef="journal_context">191</gl-cor:accountMainID>
+            <gl-cor:accountMainDescription contextRef="journal_context">INDIRILECEK KDV</gl-cor:accountMainDescription>
+            <gl-cor:accountSub>
+                <gl-cor:accountSubDescription contextRef="journal_context">İNDİRİLECEK KDV</gl-cor:accountSubDescription>
+                <gl-cor:accountSubID contextRef="journal_context">191000000</gl-cor:accountSubID>
+            </gl-cor:accountSub>
+        </gl-cor:account>
+        <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">40.10</gl-cor:amount>
+        <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+        <gl-cor:postingDate contextRef="journal_context">2013-05-01</gl-cor:postingDate>
+        <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+        <gl-cor:documentNumber contextRef="journal_context">382227</gl-cor:documentNumber>
+        <gl-cor:documentReference contextRef="journal_context">10120407</gl-cor:documentReference>
+        <gl-cor:documentDate contextRef="journal_context">2013-04-30</gl-cor:documentDate>
+        <gl-bus:paymentMethod contextRef="journal_context">Banka</gl-bus:paymentMethod>
+        <gl-cor:detailComment contextRef="journal_context">Eft - Havale</gl-cor:detailComment>
+    </gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+        </gl-cor:accountingEntries>   </xbrli:xbrl></edefter:defter>
