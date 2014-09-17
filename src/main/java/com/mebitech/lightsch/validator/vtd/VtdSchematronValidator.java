@@ -22,6 +22,17 @@ public class VtdSchematronValidator extends SchematronValidator {
         }
     }
 
+    /**
+     * Takes all assert tests from schematron file and apply iteratively
+     * @param schematron lightSch schmetron object
+     * @param xmlUrl xml file to validate
+     * @return list of failed asserts, each asserts hold index and offset values of the error
+     * @throws SchematronValidationException
+     * @throws InterruptedException
+     * @throws XPathParseException
+     * @throws NavException
+     * @throws XPathEvalException
+     */
     public List<Assert> validate(Schematron schematron, URL xmlUrl) throws SchematronValidationException, InterruptedException, XPathParseException, NavException, XPathEvalException {
 
         List<Assert> asserts = new LinkedList<Assert>();
