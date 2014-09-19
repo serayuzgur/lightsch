@@ -1,0 +1,1533 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="../xslt/yevmiye.xslt"?><edefter:defter xmlns:edefter="http://www.edefter.gov.tr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.edefter.gov.tr ../xsd/edefter.xsd">
+    <xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso639="http://www.xbrl.org/2005/iso639" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2006-10-25" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2006-10-25" xmlns:gl-plt="http://www.xbrl.org/int/gl/plt/2006-10-25" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2006-10-25 ../xsd/2006-10-25/plt/case-c-b/gl-plt-2006-10-25.xsd">
+        <link:schemaRef xlink:href="../xsd/2006-10-25/plt/case-c-b/gl-plt-2006-10-25.xsd" xlink:type="simple"/>
+        <xbrli:context id="journal_context">
+            <xbrli:entity>
+                <xbrli:identifier scheme="http://www.gib.gov.tr">1231231233</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+                <xbrli:instant>2014-09-19</xbrli:instant>
+            </xbrli:period>
+        </xbrli:context>
+        <xbrli:unit id="try">
+            <xbrli:measure>iso4217:TRY</xbrli:measure>
+        </xbrli:unit>
+        <xbrli:unit id="countable">
+            <xbrli:measure>xbrli:pure</xbrli:measure>
+        </xbrli:unit>
+<gl-cor:accountingEntries>
+    <gl-cor:documentInfo>
+        <gl-cor:entriesType contextRef="journal_context">journal</gl-cor:entriesType>
+        <gl-cor:uniqueID contextRef="journal_context">YEV2011000001</gl-cor:uniqueID>
+        <gl-cor:language contextRef="journal_context">iso639:tr</gl-cor:language>
+        <gl-cor:creationDate contextRef="journal_context">2014-09-19</gl-cor:creationDate>
+        <gl-bus:creator contextRef="journal_context">Sinan Selimoglu</gl-bus:creator>
+        <gl-cor:entriesComment contextRef="journal_context">2011-06-01 / 2011-06-30 arası Mebitech firmasına ait Yevmiye Defteri</gl-cor:entriesComment>
+        <gl-cor:periodCoveredStart contextRef="journal_context">2011-06-01</gl-cor:periodCoveredStart>
+        <gl-cor:periodCoveredEnd contextRef="journal_context">2011-06-30</gl-cor:periodCoveredEnd>
+        <gl-bus:sourceApplication contextRef="journal_context">6130734288##MEBITECH BİLİŞİM BİLGİSAYAR HİZ. DAN. SAN.TİC. LTD. ŞTİ.##Medy##1.0.0</gl-bus:sourceApplication>
+    </gl-cor:documentInfo>
+    <gl-cor:entityInformation>
+        <gl-bus:entityPhoneNumber>
+            <gl-bus:phoneNumberDescription contextRef="journal_context">bookkeeper</gl-bus:phoneNumberDescription>
+            <gl-bus:phoneNumber contextRef="journal_context">2163222514</gl-bus:phoneNumber>
+        </gl-bus:entityPhoneNumber>
+        <gl-bus:entityFaxNumberStructure>
+            <gl-bus:entityFaxNumber contextRef="journal_context">2163222514</gl-bus:entityFaxNumber>
+        </gl-bus:entityFaxNumberStructure>
+        <gl-bus:entityEmailAddressStructure>
+            <gl-bus:entityEmailAddress contextRef="journal_context">info@mebitech.com</gl-bus:entityEmailAddress>
+        </gl-bus:entityEmailAddressStructure>
+        <gl-bus:organizationIdentifiers>
+            <gl-bus:organizationIdentifier contextRef="journal_context">Mebitech</gl-bus:organizationIdentifier>
+            <gl-bus:organizationDescription contextRef="journal_context">Kurum Unvanı</gl-bus:organizationDescription>
+        </gl-bus:organizationIdentifiers>
+        <gl-bus:organizationAddress>
+            <gl-bus:organizationBuildingNumber contextRef="journal_context">22/12</gl-bus:organizationBuildingNumber>
+            <gl-bus:organizationAddressStreet contextRef="journal_context">sokak</gl-bus:organizationAddressStreet>
+            <gl-bus:organizationAddressStreet2 contextRef="journal_context">kozyatağı flora residance</gl-bus:organizationAddressStreet2>
+            <gl-bus:organizationAddressCity contextRef="journal_context">İstanbul</gl-bus:organizationAddressCity>
+            <gl-bus:organizationAddressZipOrPostalCode contextRef="journal_context">34115</gl-bus:organizationAddressZipOrPostalCode>
+            <gl-bus:organizationAddressCountry contextRef="journal_context">Türkiye</gl-bus:organizationAddressCountry>
+        </gl-bus:organizationAddress>
+        <gl-bus:entityWebSite>
+            <gl-bus:webSiteURL contextRef="journal_context">www.mebitech.com</gl-bus:webSiteURL>
+        </gl-bus:entityWebSite>
+        <gl-bus:businessDescription contextRef="journal_context">12.15.17</gl-bus:businessDescription>
+        <gl-bus:fiscalYearStart contextRef="journal_context">2011-03-01</gl-bus:fiscalYearStart>
+        <gl-bus:fiscalYearEnd contextRef="journal_context">2012-02-28</gl-bus:fiscalYearEnd>
+<gl-bus:accountantInformation>
+    <gl-bus:accountantName contextRef="journal_context">SM Selim Can</gl-bus:accountantName>
+    <gl-bus:accountantAddress>
+        <gl-bus:accountantBuildingNumber contextRef="journal_context">d/d</gl-bus:accountantBuildingNumber>
+        <gl-bus:accountantStreet contextRef="journal_context">d</gl-bus:accountantStreet>
+        <gl-bus:accountantAddressStreet2 contextRef="journal_context">d</gl-bus:accountantAddressStreet2>
+        <gl-bus:accountantCity contextRef="journal_context">d</gl-bus:accountantCity>
+        <gl-bus:accountantCountry contextRef="journal_context">Tür</gl-bus:accountantCountry>
+        <gl-bus:accountantZipOrPostalCode contextRef="journal_context">d</gl-bus:accountantZipOrPostalCode>
+    </gl-bus:accountantAddress>
+    <gl-bus:accountantEngagementTypeDescription contextRef="journal_context">SMMM sözleşmesi,2014-09-19, 123</gl-bus:accountantEngagementTypeDescription>
+    <gl-bus:accountantContactInformation>
+        <gl-bus:accountantContactPhone>
+            <gl-bus:accountantContactPhoneNumberDescription contextRef="journal_context">bookkeeper</gl-bus:accountantContactPhoneNumberDescription>
+            <gl-bus:accountantContactPhoneNumber contextRef="journal_context">5374475599</gl-bus:accountantContactPhoneNumber>
+        </gl-bus:accountantContactPhone>
+        <gl-bus:accountantContactFax>
+            <gl-bus:accountantContactFaxNumber contextRef="journal_context">1231231233</gl-bus:accountantContactFaxNumber>
+        </gl-bus:accountantContactFax>
+        <gl-bus:accountantContactEmail>
+            <gl-bus:accountantContactEmailAddress contextRef="journal_context">asda@gmail.com</gl-bus:accountantContactEmailAddress>
+        </gl-bus:accountantContactEmail>
+    </gl-bus:accountantContactInformation>
+</gl-bus:accountantInformation>
+
+    </gl-cor:entityInformation>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-01</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352647</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">35.66</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">35.66</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1101</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3440</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1101</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">INT. SEAWAYS</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">35.66</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-01</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT19894</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352647</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-01</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3441</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1101</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">35.66</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-01</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT19894</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352647</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-01</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-01</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352650</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">104.70</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">104.70</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1102</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3442</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1102</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">INT. SEAWAYS</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">104.70</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-01</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT4895</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352650</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-01</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3443</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1102</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">88.73</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-01</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT4895</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352650</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-01</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3444</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1102</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">391</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">HESAPLANAN KDV </gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">HESAPLANAN KDV</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">3911000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">15.97</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-01</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT4895</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352650</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-01</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-01</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352649</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">44.36</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">44.36</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1103</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3445</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1103</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">INT. SEAWAYS</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">44.36</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-01</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT4895</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352649</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-01</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3446</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1103</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">44.36</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-01</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT4895</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352649</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-01</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-05</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352657</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">32.53</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">32.53</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1104</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3447</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1104</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Mebitech Lojistik</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">32.53</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-05</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT93993</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352657</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-05</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3448</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1104</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">32.53</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-05</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT93993</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352657</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-05</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-05</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352660</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">84.17</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">84.17</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1105</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3449</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1105</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Cenk Bilisim Satis</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">84.17</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-05</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT9893</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352660</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-05</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3450</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1105</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">71.33</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-05</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT9893</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352660</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-05</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3451</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1105</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">391</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">HESAPLANAN KDV </gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">HESAPLANAN KDV</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">3911000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">12.84</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-05</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT9893</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352660</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-05</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-05</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">1999712</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Fem Makina 3444 Senet </gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">5600</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">5600</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1106</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3452</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1106</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">121</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALACAK SENETLERI</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">CUZDANDAKI ALACAK SENETLERI</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1210003</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">5600</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-05</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">voucher</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT989313</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">1999712</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-05</gl-cor:documentDate>
+    <gl-bus:paymentMethod contextRef="journal_context">Senet</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3453</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1106</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">Y.ICI SATISLAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">CENK MAKINA Y.ICI SATIS</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">60096623</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">5000</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-05</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">voucher</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT989313</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">1999712</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-05</gl-cor:documentDate>
+    <gl-bus:paymentMethod contextRef="journal_context">Senet</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3454</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1106</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">391</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">HESAPLANAN KDV </gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">HESAPLANAN KDV</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">3911000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">600</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-05</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">voucher</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT989313</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">1999712</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-05</gl-cor:documentDate>
+    <gl-bus:paymentMethod contextRef="journal_context">Senet</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-05</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352659</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">142.65</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">142.65</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1107</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3455</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1107</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Cenk Bilisim Satis</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">142.65</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-05</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT5858</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352659</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-05</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3456</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1107</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">142.65</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-05</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">FAT5858</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352659</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-05</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-09</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352669</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">119.66</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">119.66</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1108</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3457</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1108</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">LAVAZZAT SAN. VE TIC. A.S.</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">119.66</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-09</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">TAF093</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352669</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-09</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3458</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1108</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">119.66</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-09</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">TAF093</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352669</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-09</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-09</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352672</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">42.08</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">42.08</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1109</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3459</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1109</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">KERF TASIMA SAN VE TIC AS</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">42.08</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-09</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">JK93893</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352672</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-09</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3460</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1109</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">35.66</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-09</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">JK93893</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352672</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-09</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3461</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1109</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">391</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">HESAPLANAN KDV </gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">HESAPLANAN KDV</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">3911000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">6.42</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-09</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">JK93893</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352672</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-09</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-09</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352671</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">21.40</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">21.40</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1110</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3462</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1110</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">KERF TASIMA SAN VE TIC AS</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">21.40</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-09</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">JK93893</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352671</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-09</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3463</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1110</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">21.40</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-09</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">JK93893</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352671</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-09</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-09</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">21929832</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Ahme1975 alacagı</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">700</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">700</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1111</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3464</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1111</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">135</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">Personelden Alacaklar</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">AHMET ALACAKLAR</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1351975</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">700</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-09</gl-cor:postingDate>
+    <gl-cor:documentReference contextRef="journal_context">21929832</gl-cor:documentReference>
+    <gl-bus:paymentMethod contextRef="journal_context">Nakit</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3465</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1111</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">100</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">KASA HESABI</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">TL KASASI</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">10010001</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">700</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-09</gl-cor:postingDate>
+    <gl-cor:documentReference contextRef="journal_context">21929832</gl-cor:documentReference>
+    <gl-bus:paymentMethod contextRef="journal_context">Nakit</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-16</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352679</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">270.67</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">270.67</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1112</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3466</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1112</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">TEST TEMIZLIK SAN. TIC</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">270.67</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-16</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">L9898</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352679</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-16</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3467</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1112</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">391</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">HESAPLANAN KDV </gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">HESAPLANAN KDV</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">3911000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">41.29</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-16</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">L9898</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352679</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-16</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3468</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1112</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">109.23</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-16</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">O89898</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352679</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-16</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3469</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1112</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">65.54</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-16</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">O89898</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352679</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-16</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3470</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1112</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">FERIKOY ARABA YAN SAN.</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">54.61</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-16</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">O89898</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352679</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-16</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-16</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">3445411</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Ortak Halil'den Alacak</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">4900</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">4900</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1113</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3471</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1113</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">131</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ORTAKLARDAN ALACAKLAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Ortak Halil Güneş</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1310005</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">4900</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-16</gl-cor:postingDate>
+    <gl-cor:documentReference contextRef="journal_context">3445411</gl-cor:documentReference>
+    <gl-bus:paymentMethod contextRef="journal_context">Nakit</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3472</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1113</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">100</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">KASA HESABI</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">TL KASASI</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">10010001</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">4900</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-16</gl-cor:postingDate>
+    <gl-cor:documentReference contextRef="journal_context">3445411</gl-cor:documentReference>
+    <gl-bus:paymentMethod contextRef="journal_context">Nakit</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-20</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352708</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">21.40</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">21.40</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1114</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3473</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1114</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">LEZZAN AYAKKABICILIK</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">21.40</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-20</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">JA8989</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352708</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-20</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3474</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1114</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">21.40</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-20</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">JA8989</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352708</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-20</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-24</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">467800078</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Gelir Faturası</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">102.70</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">102.70</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1115</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3475</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1115</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">FATURA</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">LEZZAN AYAKKABICILIK</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">102.70</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-24</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">O09090</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">467800078</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-24</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3476</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1115</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">87.03</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-24</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">O09090</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">467800078</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-24</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3477</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1115</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">391</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">HESAPLANAN KDV </gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">HESAPLANAN KDV</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">3911000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">15.67</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-24</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">O09090</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">467800078</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-24</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-24</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">467800079</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Gelir Faturası</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">21.40</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">21.40</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1116</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3478</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1116</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">LEZZAN AYAKKABICILIK</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">21.40</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-24</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">H9898</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">467800079</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-24</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3479</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1116</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">21.40</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-24</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">H9898</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">467800079</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-24</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-24</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">285</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Fatura Tahsilatı</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">269.37</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">269.37</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1117</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3480</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1117</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">LEZZAN AYAKKABICILIK</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">269.37</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-24</gl-cor:postingDate>
+    <gl-cor:documentReference contextRef="journal_context">285</gl-cor:documentReference>
+    <gl-bus:paymentMethod contextRef="journal_context">Banka</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3481</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1117</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">102</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">BANKA</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">GARANTI USD</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1021100</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">269.37</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-24</gl-cor:postingDate>
+    <gl-cor:documentReference contextRef="journal_context">285</gl-cor:documentReference>
+    <gl-bus:paymentMethod contextRef="journal_context">Banka</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-24</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">98222118</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Cenk Bilisim Cek Alimi</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">8000</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">8000</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1118</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3482</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1118</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">101</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ÇEKLER</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Muhasebe Birimindeki Çekler</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1010009</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">8000</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-24</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">check</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">C6090</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">98222118</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-24</gl-cor:documentDate>
+    <gl-bus:paymentMethod contextRef="journal_context">Çek</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3483</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1118</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Cenk Bilisim Satis</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6007896</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">8000</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-24</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">check</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">C6090</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">98222118</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-24</gl-cor:documentDate>
+    <gl-bus:paymentMethod contextRef="journal_context">Çek</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-28</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352714</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">104.70</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">104.70</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1119</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3484</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1119</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">LEZZAN AYAKKABICILIK</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">104.70</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-28</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">P98989</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352714</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-28</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3485</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1119</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">88.73</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-28</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">P98989</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352714</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-28</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3486</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1119</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">391</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">HESAPLANAN KDV </gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">HESAPLANAN KDV</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">3911000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">15.97</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-28</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">P98989</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352714</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-28</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-28</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">1234141</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Garanti Banka Teminat</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">20000</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">20000</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1120</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3487</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1120</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">900</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">BORCLU NAZIM HESAPLAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Teminat Mektupları</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">9000001</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">20000</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-28</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">other</gl-cor:documentType>
+    <gl-cor:documentTypeDescription contextRef="journal_context">Teminat Mektubu</gl-cor:documentTypeDescription>
+    <gl-cor:documentNumber contextRef="journal_context">A89891</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">1234141</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-28</gl-cor:documentDate>
+    <gl-cor:detailComment contextRef="journal_context">Garant Banka</gl-cor:detailComment>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3488</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1120</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">901</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALACAKLI NAZIM HESAPLAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Teminat Mektubu Verenler</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">9010001</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">20000</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-28</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">other</gl-cor:documentType>
+    <gl-cor:documentTypeDescription contextRef="journal_context">Teminat Mektubu</gl-cor:documentTypeDescription>
+    <gl-cor:documentNumber contextRef="journal_context">A89891</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">1234141</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-28</gl-cor:documentDate>
+    <gl-cor:detailComment contextRef="journal_context">Garanti Banka</gl-cor:detailComment>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-28</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">352713</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Geri bildirim</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">44.36</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">44.36</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1121</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3489</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1121</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">GID GIDA A.Ş</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">44.36</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-28</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">U787</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352713</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-28</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3490</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1121</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">SATICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">Y.İCİ GELIRLER</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">44.36</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-28</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">U787</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">352713</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-28</gl-cor:documentDate>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-28</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">90001221</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Verda Gıda Senet</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">7500</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">7500</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1122</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3491</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1122</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">121</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">CUZDANDAKI ALACAK SENETLERI</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1210003</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">7500</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-28</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">voucher</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">G8787</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">90001221</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-28</gl-cor:documentDate>
+    <gl-bus:paymentMethod contextRef="journal_context">Senet</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3492</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1122</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">FATURA</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">BERIM IPLIK</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">6007663</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">6000</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-28</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">voucher</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">G8787</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">90001221</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-28</gl-cor:documentDate>
+    <gl-bus:paymentMethod contextRef="journal_context">Senet</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3493</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1122</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">391</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">HESAPLANAN KDV </gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">HESAPLANAN KDV</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">3911000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">1500</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-28</gl-cor:postingDate>
+    <gl-cor:documentType contextRef="journal_context">voucher</gl-cor:documentType>
+    <gl-cor:documentNumber contextRef="journal_context">G8787</gl-cor:documentNumber>
+    <gl-cor:documentReference contextRef="journal_context">90001221</gl-cor:documentReference>
+    <gl-cor:documentDate contextRef="journal_context">2011-06-28</gl-cor:documentDate>
+    <gl-bus:paymentMethod contextRef="journal_context">Senet</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+<gl-cor:entryHeader>
+    <gl-cor:enteredBy contextRef="journal_context">Sinan Selimoglu</gl-cor:enteredBy>
+    <gl-cor:enteredDate contextRef="journal_context">2011-06-30</gl-cor:enteredDate>
+    <gl-cor:entryNumber contextRef="journal_context">286</gl-cor:entryNumber>
+    <gl-cor:entryComment contextRef="journal_context">Fatura Tahsilatı</gl-cor:entryComment>
+    <gl-bus:totalDebit contextRef="journal_context" decimals="INF" unitRef="try">697.47</gl-bus:totalDebit>
+    <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">697.47</gl-bus:totalCredit>
+    <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1123</gl-cor:entryNumberCounter>
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3494</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1123</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">GID GIDA A.Ş</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">154.67</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-30</gl-cor:postingDate>
+    <gl-cor:documentReference contextRef="journal_context">286</gl-cor:documentReference>
+    <gl-bus:paymentMethod contextRef="journal_context">Banka</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3495</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1123</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">120</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">ALICILAR</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">GID GIDA A.Ş</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">542.80</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-30</gl-cor:postingDate>
+    <gl-cor:documentReference contextRef="journal_context">286</gl-cor:documentReference>
+    <gl-bus:paymentMethod contextRef="journal_context">Banka</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+<gl-cor:entryDetail>
+    <gl-cor:lineNumber contextRef="journal_context">3496</gl-cor:lineNumber>
+    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1123</gl-cor:lineNumberCounter>
+    <gl-cor:account>
+        <gl-cor:accountMainID contextRef="journal_context">102</gl-cor:accountMainID>
+        <gl-cor:accountMainDescription contextRef="journal_context">BANKA</gl-cor:accountMainDescription>
+        <gl-cor:accountSub>
+            <gl-cor:accountSubDescription contextRef="journal_context">GARANTI TL</gl-cor:accountSubDescription>
+            <gl-cor:accountSubID contextRef="journal_context">1021200</gl-cor:accountSubID>
+        </gl-cor:accountSub>
+    </gl-cor:account>
+    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">697.47</gl-cor:amount>
+    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
+    <gl-cor:postingDate contextRef="journal_context">2011-06-30</gl-cor:postingDate>
+    <gl-cor:documentReference contextRef="journal_context">286</gl-cor:documentReference>
+    <gl-bus:paymentMethod contextRef="journal_context">Banka</gl-bus:paymentMethod>
+</gl-cor:entryDetail>
+
+
+</gl-cor:entryHeader>
+
+</gl-cor:accountingEntries>
+    </xbrli:xbrl>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-Id-1945bd5d-06dd-4770-9994-2ed200165e1f">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ds:Reference Id="Reference-Id-cd723940-010e-41eb-b8d3-0432a4a0b0e6" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signed-Properties-Id-48ce4749-d653-4a0b-9ce3-ddf8b8625643">
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>bPARM9gUr5fapUOpLpp62gdHIG8HKdxW2VZmloI7LwE=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>Elm0LUFRcO4SsS2VIvVwbVoNflJ967g6JoZL5ry+UnA=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue Id="Signature-Value-Id-e7b0bde5-c9d8-494e-9b4a-915e2ea78302">ASYXODgkeUyYGnKaxv3a3FIoEr4XG9l0CVF5sRvrt3MTHOLFLn20L/W7wcfv5mo3gqxsEv0t3D6o
+h27yhVpAQC1KYiygcV7DqvC6bsgGq6wJ5hPJ2o2Do5BUMxQmzqQPK5YDFNnUapXFunKmYvHtpf3j
+rI7nhMSAD4N6Xw7eV2Ww191aIGnUgDe5imZP7Fs4b3Tj3uW62sM0mMJiwtK6xUvicSydXk1bzW+d
+zyQ0rck2SSjdIQal93tp6npTHsV6/Ukx639YFoGfJ8/NEQy9QGjr2BhMfUeNeZdoV7XoAiI5MuAK
+ASg8sF0X8E8O/m/VEdCvdJWQuwJETp0kmXI/tg==</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509Certificate>MIIFrDCCBJSgAwIBAgIGAJpaGcRqMA0GCSqGSIb3DQEBCwUAMFwxCzAJBgNVBAYTAlRSMU0wSwYD
+VQQDDERNYWxpIE3DvGjDvHIgRWxla3Ryb25payBTZXJ0aWZpa2EgSGl6bWV0IFNhxJ9sYXnEsWPE
+sXPEsSAtIFPDvHLDvG0gMTAeFw0xMDAyMDQxMTI0MzlaFw0xNTAyMDMxMTI0MzlaMFUxHjAcBgNV
+BAsMFWUtRmF0dXJhIERlbmVtZSBBLsWeLjETMBEGA1UEBRMKOTk5OTk5OTk5OTEeMBwGA1UEAwwV
+ZS1GYXR1cmEgRGVuZW1lIEEuxZ4uMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg4fW
+V5+GRbNQTnVpG5naG/4xC167blIngQJdOJVss7LSBjFkOOitvJtpV0Qvsld1HzW9A+P8aR17KdgZ
+zqsc5+akR0+volN2ZH9M+q0Xza7zSQjgBzovv2R6VQWLnEyFb4i3PzEqQMDbF8n30oNWj0BjBvNn
++eTkxmk8ifhLDAwrrDasje5CudTNo9pIv73VcJqA3F+pKwW7MGIZeDJpLnbbqz+ELOIR3ev51Ewb
+889QQyqlMiu2LKaDVmpsFzAlFo25ayLTJ896/cL0Lff+/W+CKeOo3f/SrAcZWp0RWmiKZDET9LqC
+odeH+2x3M8+KK2IwjABk378e8/TipjfENQIDAQABo4ICeTCCAnUwHwYDVR0jBBgwFoAURiCpUxso
+DByu8ihRg7MevvJTFHwwHQYDVR0OBBYEFBuWz6YnIrQxH7pm5HESs3vtJx9cMA4GA1UdDwEB/wQE
+AwIHgDCCATMGA1UdIASCASowggEmMIIBIgYLYIYYAQIBAQUHBAEwggERMCoGCCsGAQUFBwIBFh5o
+dHRwOi8vZGVwby5rYW11c20uZ292LnRyL2lsa2UwgeIGCCsGAQUFBwICMIHVHoHSAEIAdQAgAHMA
+ZQByAHQAaQBmAGkAawBhACAAaQBsAGUAIABpAGwAZwBpAGwAaQAgAHMAZQByAHQAaQBmAGkAawBh
+ACAAdQB5AGcAdQBsAGEAbQBhACAAZQBzAGEAcwBsAGEAcgExAG4BMQAgAG8AawB1AG0AYQBrACAA
+aQDnAGkAbgAgAGIAZQBsAGkAcgB0AGkAbABlAG4AIAB3AGUAYgAgAHMAaQB0AGUAcwBpAG4AaQAg
+AHoAaQB5AGEAcgBlAHQAIABlAGQAaQBuAGkAegAuMAwGA1UdEwEB/wQCMAAwFgYDVR0lBA8wDQYL
+YIYYAQIBAQUHMgEwQQYDVR0fBDowODA2oDSgMoYwaHR0cDovL2RlcG8ua2FtdXNtLmdvdi50ci9r
+dXJ1bXNhbC9tbWVzaHMtczEuY3JsMIGCBggrBgEFBQcBAQR2MHQwPAYIKwYBBQUHMAKGMGh0dHA6
+Ly9kZXBvLmthbXVzbS5nb3YudHIva3VydW1zYWwvbW1lc2hzLXMxLmNydDA0BggrBgEFBQcwAYYo
+aHR0cDovL2Npc2R1cG1tczEua3VydW1zYWwua2FtdXNtLmdvdi50cjANBgkqhkiG9w0BAQsFAAOC
+AQEACYMEtQf5/4+qEZrubSB9W5vjslgmCAiWg5b02DGxknjlrCpaXWq2WnBo2r5t2wCXkVXSpHYP
+mx+AkJI7R0vOeUrNwMJokjDRG8iII2hUqrdqC+7eOKVPaoNcn1LKbvg8bMde3qcfMF1FFgCSQaon
+u/3H1hl9r6kjLln1N3gSzdlCrumzx071FguBIrtWWfIdj8SZNicuru0Jr9xKQYHSRAvm1/noiTbz
+iLj34Ayxz3/srXAJlp+9Z47D6XIUyhztwHKeS4Pf71yITWVszThmA4hm5hKPSJ3zt4tCbXwlSEkd
+MNtPl6PFVBR/l/gtIYiBsR9lpib3+Lv9g0Gorz/5XQ==</ds:X509Certificate>
+<ds:X509SubjectName>e-Fatura Deneme A.Ş.</ds:X509SubjectName></ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>AIOH1lefhkWzUE51aRuZ2hv+MQteu25SJ4ECXTiVbLOy0gYxZDjorbybaVdEL7JXdR81vQPj/Gkd
+eynYGc6rHOfmpEdPr6JTdmR/TPqtF82u80kI4Ac6L79kelUFi5xMhW+Itz8xKkDA2xfJ99KDVo9A
+YwbzZ/nk5MZpPIn4SwwMK6w2rI3uQrnUzaPaSL+91XCagNxfqSsFuzBiGXgyaS5226s/hCziEd3r
++dRMG/PPUEMqpTIrtiymg1ZqbBcwJRaNuWsi0yfPev3C9C33/v1vginjqN3/0qwHGVqdEVpoimQx
+E/S6gqHXh/tsdzPPiitiMIwAZN+/HvP04qY3xDU=</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+<ds:Object Id="Object-Id-46a79f75-9022-4825-a55b-7420862d85c3"><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#Signature-Id-1945bd5d-06dd-4770-9994-2ed200165e1f">
+<xades:SignedProperties Id="Signed-Properties-Id-48ce4749-d653-4a0b-9ce3-ddf8b8625643">
+<xades:SignedSignatureProperties>
+<xades:SigningTime>2014-09-19T11:54:22.409+03:00</xades:SigningTime>
+<xades:SigningCertificate>
+<xades:Cert>
+<xades:CertDigest>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>4pCQHzUOwVViUIbtc2C5LQkMH/4nS2aTFSx93qp5x8Y=</ds:DigestValue>
+</xades:CertDigest>
+<xades:IssuerSerial>
+<ds:X509IssuerName>CN=Mali Mühür Elektronik Sertifika Hizmet Sağlayıcısı - Sürüm 1,C=TR</ds:X509IssuerName>
+<ds:X509SerialNumber>662936601706</ds:X509SerialNumber>
+</xades:IssuerSerial>
+</xades:Cert>
+</xades:SigningCertificate>
+</xades:SignedSignatureProperties>
+</xades:SignedProperties>
+</xades:QualifyingProperties>
+</ds:Object>
+</ds:Signature></edefter:defter>
