@@ -24,8 +24,9 @@ public class VtdSchematronValidator extends SchematronValidator {
 
     /**
      * Takes all assert tests from schematron file and apply iteratively
+     *
      * @param schematron lightSch schmetron object
-     * @param xmlUrl xml file to validate
+     * @param xmlUrl     xml file to validate
      * @return list of failed asserts, each asserts hold index and offset values of the error
      * @throws SchematronValidationException
      * @throws InterruptedException
@@ -33,7 +34,7 @@ public class VtdSchematronValidator extends SchematronValidator {
      * @throws NavException
      * @throws XPathEvalException
      */
-    public List<Assert> validate(Schematron schematron, URL xmlUrl) throws SchematronValidationException, InterruptedException, XPathParseException, NavException, XPathEvalException {
+    public List<Assert> validate(Schematron schematron, URL xmlUrl) throws SchematronValidationException, InterruptedException, NavException, XPathEvalException {
 
         List<Assert> asserts = new LinkedList<Assert>();
         VTDGen vg = new VTDGen();
@@ -52,17 +53,17 @@ public class VtdSchematronValidator extends SchematronValidator {
                 LOGGER.debug("Pattern Name : " + pattern.getId());
                 for (Rule rule : pattern.getRules()) {
                     LOGGER.debug("Evaluating Xpath Expression : " + rule.getContext());
-                    ap.selectXPath(rule.getContext());
+                    try {
+                        ap.selectXPath(rule.getContext());
+                    } catch (XPathParseException e) {
+                        asserts.add(new Assert(rule.getContext()));
+                    }
                     for (Assert anAssert : rule.getAsserts()) {
                         anAssert.setTest(XPathUtil.modifyXPath4Vtd(anAssert.getTest()));
                         XPathUtil.replaceLetVariables(schematron.getSchema(), rule, anAssert);
-                        try {
-                            ap2.selectXPath(anAssert.getTest());
-                            List<Assert> asserts_ = doTest(ap, ap2, vn, anAssert);
-                            asserts.addAll(asserts_);
-                        } finally {
-                            ap.resetXPath();
-                        }
+                        List<Assert> asserts_ = doTest(ap, ap2, vn, anAssert);
+                        asserts.addAll(asserts_);
+                        ap.resetXPath();
                     }
                 }
             }
@@ -85,9 +86,23 @@ public class VtdSchematronValidator extends SchematronValidator {
     private List<Assert> doTest(AutoPilot ap, AutoPilot ap2, VTDNav vn, Assert anAssert) throws NavException, XPathEvalException {
         List<Assert> asserts = new LinkedList<Assert>();
         int index;
+        // Just finds specified path and moves vn to there
+        try {
+            ap2.selectXPath(anAssert.getTest());
+        } catch (XPathParseException e) {
+            asserts.add(anAssert);
+            LOGGER.error(e.getMessage());
+            return asserts;
+        }
+
         while ((index = ap.evalXPath()) != -1) {
+            // tests given expression
             if (!ap2.evalXPathToBoolean()) {
                 // Error occurred if we are here
+                LOGGER.info("*******************************  HATA MESAJI ************************************");
+                LOGGER.error(new String(vn.getElementFragmentNs().toBytes()));
+                LOGGER.error(anAssert.getMessage());
+                LOGGER.info("*********************************************************************************");
                 anAssert.setElementFragment(vn.getElementFragment());
                 anAssert.setIndex(index);
                 asserts.add(anAssert);

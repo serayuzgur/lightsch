@@ -139,6 +139,25 @@
                 <gl-bus:totalCredit contextRef="journal_context" decimals="INF" unitRef="try">35.66</gl-bus:totalCredit>
                 <gl-cor:entryNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1101</gl-cor:entryNumberCounter>
                 <gl-cor:entryDetail>
+                    <gl-cor:lineNumber contextRef="journal_context">3439</gl-cor:lineNumber>
+                    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1101</gl-cor:lineNumberCounter>
+                    <gl-cor:account>
+                        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+                        <gl-cor:accountMainDescription contextRef="journal_context">REVENUES CORP.</gl-cor:accountMainDescription>
+                        <gl-cor:accountSub>
+                            <gl-cor:accountSubDescription contextRef="journal_context">LOKAL GELIRLER (CORP.)</gl-cor:accountSubDescription>
+                            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+                        </gl-cor:accountSub>
+                    </gl-cor:account>
+                    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">0.66</gl-cor:amount>
+                    <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+                    <gl-cor:postingDate contextRef="journal_context">2011-06-01</gl-cor:postingDate>
+                    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+                    <gl-cor:documentNumber contextRef="journal_context">ISNT7869</gl-cor:documentNumber>
+                    <gl-cor:documentReference contextRef="journal_context">352647</gl-cor:documentReference>
+                    <gl-cor:documentDate contextRef="journal_context">2011-06-01</gl-cor:documentDate>
+                </gl-cor:entryDetail>
+                <gl-cor:entryDetail>
                     <gl-cor:lineNumber contextRef="journal_context">3440</gl-cor:lineNumber>
                     <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1101</gl-cor:lineNumberCounter>
                     <gl-cor:account>
@@ -149,7 +168,7 @@
                             <gl-cor:accountSubID contextRef="journal_context">1200000</gl-cor:accountSubID>
                         </gl-cor:accountSub>
                     </gl-cor:account>
-                    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">35.66</gl-cor:amount>
+                    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">0.66</gl-cor:amount>
                     <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
                     <gl-cor:postingDate contextRef="journal_context">2011-06-01</gl-cor:postingDate>
                     <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
@@ -168,8 +187,27 @@
                             <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
                         </gl-cor:accountSub>
                     </gl-cor:account>
-                    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">35.66</gl-cor:amount>
+                    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">35.00</gl-cor:amount>
                     <gl-cor:debitCreditCode contextRef="journal_context">C</gl-cor:debitCreditCode>
+                    <gl-cor:postingDate contextRef="journal_context">2011-06-01</gl-cor:postingDate>
+                    <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
+                    <gl-cor:documentNumber contextRef="journal_context">ISNT7869</gl-cor:documentNumber>
+                    <gl-cor:documentReference contextRef="journal_context">352647</gl-cor:documentReference>
+                    <gl-cor:documentDate contextRef="journal_context">2011-06-01</gl-cor:documentDate>
+                </gl-cor:entryDetail>
+                <gl-cor:entryDetail>
+                    <gl-cor:lineNumber contextRef="journal_context">3442</gl-cor:lineNumber>
+                    <gl-cor:lineNumberCounter contextRef="journal_context" decimals="INF" unitRef="countable">1101</gl-cor:lineNumberCounter>
+                    <gl-cor:account>
+                        <gl-cor:accountMainID contextRef="journal_context">600</gl-cor:accountMainID>
+                        <gl-cor:accountMainDescription contextRef="journal_context">REVENUES CORP.</gl-cor:accountMainDescription>
+                        <gl-cor:accountSub>
+                            <gl-cor:accountSubDescription contextRef="journal_context">LOKAL GELIRLER (CORP.)</gl-cor:accountSubDescription>
+                            <gl-cor:accountSubID contextRef="journal_context">6008701</gl-cor:accountSubID>
+                        </gl-cor:accountSub>
+                    </gl-cor:account>
+                    <gl-cor:amount contextRef="journal_context" decimals="INF" unitRef="try">35.00</gl-cor:amount>
+                    <gl-cor:debitCreditCode contextRef="journal_context">D</gl-cor:debitCreditCode>
                     <gl-cor:postingDate contextRef="journal_context">2011-06-01</gl-cor:postingDate>
                     <gl-cor:documentType contextRef="journal_context">invoice</gl-cor:documentType>
                     <gl-cor:documentNumber contextRef="journal_context">ISNT7869</gl-cor:documentNumber>
