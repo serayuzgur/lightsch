@@ -25,7 +25,7 @@ public class VtdSchematronValidatorTest {
 
         long start = System.currentTimeMillis();
         Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("testSch.xml"));
-        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("testError.xml");
+        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("positiveData.xml");
         List<Assert> failed = new VtdSchematronValidator().validate(schematron, xmlPath);
         long end = System.currentTimeMillis();
 
@@ -34,7 +34,7 @@ public class VtdSchematronValidatorTest {
         System.out.println("Failed Size: " + failed.size() + " finished in : " + (end - start) + " miliseconds");
         System.out.println("*******************************************************************\n\n");
         for (Assert assert4 : failed) {
-            System.out.println(assert4.getMessage());
+            System.out.println("Message  : " + assert4.getMessage() + " Test : " + assert4.getTest() + " Index : " + assert4.getIndex() + " Element Fragment Index :  " + assert4.getElementFragment());
         }
 
     }

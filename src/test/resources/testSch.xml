@@ -11,6 +11,7 @@
     <ns prefix="ds" uri="http://www.w3.org/2000/09/xmldsig#"/>
     <ns prefix="xades" uri="http://uri.etsi.org/01903/v1.3.2#"/>
     <ns prefix="edefter" uri="http://www.edefter.gov.tr"/>
+    <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
 
     <title>Yevmiye defteri dokumanlarını kontrol etmek için gerekli olan schematron kuralları</title>
 
@@ -208,14 +209,14 @@
     <!-- <gl-cor:entryHeader> kontrolleri -->
     <pattern id="entryheader">
         <rule context="/edefter:defter/xbrli:xbrl/gl-cor:accountingEntries/gl-cor:entryHeader">
-            <assert test="not(following::node()) or not(following::node()/gl-cor:entryNumberCounter) or not(gl-cor:entryNumberCounter) or following::node()/gl-cor:entryNumberCounter = gl-cor:entryNumberCounter + 1">
-                11601 - Yevmiye numarası müteselsil (ardışık) bir değere sahip olmalıdır.
-            </assert>
+            <!--<assert test="not(following::node()) or not(following::node()/gl-cor:entryNumberCounter) or not(gl-cor:entryNumberCounter) or following::node()/gl-cor:entryNumberCounter = gl-cor:entryNumberCounter + 1">-->
+            <!--11601 - Yevmiye numarası müteselsil (ardışık) bir değere sahip olmalıdır.-->
+            <!--</assert>-->
 
             <!-- Takes too long time or never ends  -->
-            <!--<assert test="not(following::node()) or not(following::node()/gl-cor:enteredDate) or not(gl-cor:enteredDate) or following-sibling::node()/gl-cor:enteredDate >= gl-cor:enteredDate">-->
-                <!--11602 - Yevmiye defteri tarihe göre sıralı olmalıdır.-->
-            <!--</assert>-->
+            <assert test="not(following::node()) or not(following::node()/gl-cor:enteredDate) or not(gl-cor:enteredDate) or translate(following-sibling::node()/gl-cor:enteredDate,'-','') >= translate(gl-cor:enteredDate,'-','')">
+                11602 - Yevmiye defteri tarihe göre sıralı olmalıdır.
+            </assert>
 
             <assert test="gl-cor:enteredBy">11603 - Yevmiye kaydını oluşturan kullanıcı tanımlaması zorunlu alandır.
             </assert>
@@ -240,7 +241,10 @@
                 alacak değerleri birbirine eşit olmalıdır.
             </assert>
             <!-- It works sometimes, sometimes not  -->
-            <assert test="gl-bus:totalDebit = sum(gl-cor:entryDetail[gl-cor:debitCreditCode = 'D']/xs:decimal(gl-cor:amount))"> 11612 - Yevmiye detay maddelerinin borç toplamları; yevmiye maddesindeki toplam borç alanına eşit olmalıdır.</assert>
+            <!--<assert test="gl-bus:totalDebit = sum(gl-cor:entryDetail[gl-cor:debitCreditCode = 'D']/(number(gl-cor:amount)))">-->
+            <!--11612 - Yevmiye detay maddelerinin borç toplamları; yevmiye maddesindeki toplam borç alanına eşit-->
+            <!--olmalıdır.-->
+            <!--</assert>-->
             <!--<assert test="gl-bus:totalCredit = sum(gl-cor:entryDetail[gl-cor:debitCreditCode = 'C' or gl-cor:debitCreditCode = 'credit']/xs:decimal(gl-cor:amount))"> 11613 - Yevmiye detay maddelerinin alacak toplamları; yevmiye maddesindeki toplam alacak alanına eşit olmalıdır.</assert>-->
 
         </rule>
@@ -250,9 +254,9 @@
     <pattern id="entrydetail">
         <rule context="/edefter:defter/xbrli:xbrl/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail">
             <assert test="gl-cor:lineNumber">11614 - Yevmiye detay numarası zorunlu bir elemandır.</assert>
-            <assert test="not(following::node()) or not(following::node()/gl-cor:lineNumber) or not(gl-cor:lineNumber) or following::node()/number(gl-cor:lineNumber) = number(gl-cor:lineNumber) + 1">
-                11615 - Yevmiye detay numarası müteselsil (ardışık) bir değere sahip olmalıdır.
-            </assert>
+            <!--<assert test="not(following::node()) or not(following::node()/gl-cor:lineNumber) or not(gl-cor:lineNumber) or following::node()/number(gl-cor:lineNumber) = number(gl-cor:lineNumber) + 1">-->
+            <!--11615 - Yevmiye detay numarası müteselsil (ardışık) bir değere sahip olmalıdır.-->
+            <!--</assert>-->
 
             <assert test="gl-cor:lineNumberCounter">11616 - Yevmiye numarası referans verilen alan zorunlu bir
                 elemandır.
@@ -294,7 +298,7 @@
 
             <assert test="gl-cor:postingDate">11627 - PostingDate zorunlu bir elemandır.</assert>
             <assert test="not(gl-cor:postingDate) or not(parent::node()/gl-cor:enteredDate) or gl-cor:postingDate = parent::node()/gl-cor:enteredDate">
-                11628 - Yevmiye tarihi ile postingDate elemanı aynı değeri taşımalıdır.
+            11628 - Yevmiye tarihi ile postingDate elemanı aynı değeri taşımalıdır.
             </assert>
 
             <assert test="not(normalize-space(gl-cor:documentType) = 'other') or string-length(normalize-space(gl-cor:documentTypeDescription)) > 0">

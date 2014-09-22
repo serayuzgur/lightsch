@@ -99,13 +99,14 @@ public class VtdSchematronValidator extends SchematronValidator {
             // tests given expression
             if (!ap2.evalXPathToBoolean()) {
                 // Error occurred if we are here
-                LOGGER.info("*******************************  HATA MESAJI ************************************");
-                LOGGER.error(new String(vn.getElementFragmentNs().toBytes()));
-                LOGGER.error(anAssert.getMessage());
-                LOGGER.info("*********************************************************************************");
-                anAssert.setElementFragment(vn.getElementFragment());
-                anAssert.setIndex(index);
-                asserts.add(anAssert);
+//                LOGGER.info("*******************************  ERROR XML ************************************");
+//                LOGGER.error(new String(vn.getElementFragmentNs().toBytes()));
+//                LOGGER.error(anAssert.getMessage());
+//                LOGGER.error(anAssert.getMessage());
+//                LOGGER.info("*********************************************************************************");
+//                anAssert.setElementFragment(vn.getElementFragment());
+//                anAssert.setIndex(index);
+//                asserts.add(anAssert);
             }
         }
         return asserts;
