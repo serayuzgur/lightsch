@@ -59,8 +59,8 @@ public class VtdSchematronValidator extends SchematronValidator {
                         asserts.add(new Assert(rule.getContext()));
                     }
                     for (Assert anAssert : rule.getAsserts()) {
-                        anAssert.setTest(XPathUtil.modifyXPath4Vtd(anAssert.getTest()));
                         XPathUtil.replaceLetVariables(schematron.getSchema(), rule, anAssert);
+                        anAssert.setTest(XPathUtil.modifyXPath4Vtd(anAssert.getTest()));
                         List<Assert> asserts_ = doTest(ap, ap2, vn, anAssert);
                         asserts.addAll(asserts_);
                         ap.resetXPath();
@@ -99,90 +99,16 @@ public class VtdSchematronValidator extends SchematronValidator {
             // tests given expression
             if (!ap2.evalXPathToBoolean()) {
                 // Error occurred if we are here
-//                LOGGER.info("*******************************  ERROR XML ************************************");
-//                LOGGER.error(new String(vn.getElementFragmentNs().toBytes()));
-//                LOGGER.error(anAssert.getMessage());
-//                LOGGER.error(anAssert.getMessage());
-//                LOGGER.info("*********************************************************************************");
-//                anAssert.setElementFragment(vn.getElementFragment());
-//                anAssert.setIndex(index);
-//                asserts.add(anAssert);
+                LOGGER.info("*******************************  ERROR XML ************************************");
+                LOGGER.error(new String(vn.getElementFragmentNs().toBytes()));
+                LOGGER.error(anAssert.getMessage());
+                LOGGER.error(anAssert.getMessage());
+                LOGGER.info("*********************************************************************************");
+                anAssert.setElementFragment(vn.getElementFragment());
+                anAssert.setIndex(index);
+                asserts.add(anAssert);
             }
         }
         return asserts;
     }
-
-//    private static boolean isValidXPath(AutoPilot ap, AutoPilot ap2, VTDNav vn, Assert assert_) throws NavException {
-//        try {
-//            int i = 0;
-//            AtomicInteger type = new AtomicInteger(); // 0 evalXpath 1 boolean 2 number 3 string
-//            type.set(-1);
-//            while (checkExp(ap, ap2, type, assert_, vn)) {
-//                i++;
-//            }
-//            return i > 0;
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            return false;
-//        }
-//    private static boolean checkExp(AutoPilot ap, AutoPilot ap2, AtomicInteger type, Assert assert_, VTDNav vn) throws XPathParseException, NavException, XPathEvalException {
-//
-//        int index = -1;
-//        int a = 0;
-//        switch (type.get()) {
-//            case -1:
-//                ap2.selectXPath(assert_.getTest());
-//                LOGGER.info("Started : " + assert_.getTest());
-//                while ((index = ap.evalXPath()) != -1) {
-//                    if (!ap2.evalXPathToBoolean()) {
-//                        a++;
-////                        LOGGER.error(" \n******** \n Error Occured! Index : " + vn.getXPathStringVal() + " Description  : " + assert_.getMessage() + " \n********");
-//                    }
-//                }
-//                LOGGER.info("error count " + a);
-//                type.set(0);
-//                return true;
-//
-//            case 0:
-//                try {
-//                    index = ap.evalXPath();
-//                    return false;
-//
-//                } catch (XPathEvalException e) {
-//                    e.printStackTrace();
-//                    index = -1;
-//                } catch (NavException e) {
-//                    e.printStackTrace();
-//                    index = -1;
-//                }
-//                break;
-//
-//            case 1:
-//                index = -1;
-//                break;
-//
-//        }
-//
-//        return index != -1;
-
-
-//    }
-
-//    }
-//    private static void addLetDeclerations(Schema schema, Rule rule, AutoPilot ap) throws XPathParseException {
-//        ap.clearVariableExprs();
-//        for (Let let : schema.getLets()) {
-//            ap.declareVariableExpr(let.getName(), let.getValue());
-//        }
-//        if (!rule.getLets().isEmpty()) {
-//            for (Let let : rule.getLets()) {
-//                ap.declareVariableExpr(let.getName(), let.getValue());
-//            }
-//        }
-//    }
-//
-//    private static boolean hasXPath(AutoPilot ap) throws XPathEvalException, NavException {
-//        return ap.evalXPath() != -1;
-//    }
 }
