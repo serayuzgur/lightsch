@@ -23,4 +23,12 @@ public class Schema extends Scope{
 	public boolean addPattern (Pattern pattern){
 		return patterns.add(pattern);
 	}
+
+    @Override
+    public String toString() {
+        return "Schema{" +
+                "namespaces=" + namespaces +
+                ", patterns=" + patterns +
+                '}';
+    }
 }

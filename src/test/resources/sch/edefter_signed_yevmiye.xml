@@ -236,7 +236,7 @@
                 11601 - Yevmiye numarası müteselsil (ardışık) bir değere sahip olmalıdır.
             </assert>
 
-            <!--<assert test="not(following::node()) or not(following::node()/gl-cor:enteredDate) or not(gl-cor:enteredDate) or following::node()/gl-cor:enteredDate >= gl-cor:enteredDate"> 11602 - Yevmiye defteri tarihe göre sıralı olmalıdır.</assert>-->
+            <assert test="not(following::node()) or not(following::node()/gl-cor:enteredDate) or not(gl-cor:enteredDate) or translate(following-sibling::node()/gl-cor:enteredDate,'-','') >= translate(gl-cor:enteredDate,'-','')"> 11602 - Yevmiye defteri tarihe göre sıralı olmalıdır.</assert>
 
             <assert test="gl-cor:enteredBy">11603 - Yevmiye kaydını oluşturan kullanıcı tanımlaması zorunlu alandır.</assert>
             <assert test="not(gl-cor:enteredBy) or string-length(normalize-space(gl-cor:enteredBy)) >= 2">11604 - Yevmiye kaydını oluşturan kişinin

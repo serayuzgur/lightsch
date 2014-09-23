@@ -10,4 +10,11 @@ public class Schematron  {
 	public void setSchema(Schema schema) {
 		this.schema = schema;
 	}
+
+    @Override
+    public String toString() {
+        return "Schematron{" +
+                "schema=" + schema +
+                '}';
+    }
 }

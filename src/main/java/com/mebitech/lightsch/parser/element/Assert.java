@@ -58,4 +58,15 @@ public class Assert {
     public void setElementFragment(long elementFragment) {
         this.elementFragment = elementFragment;
     }
+
+
+    @Override
+    public String toString() {
+        return "Assert{" +
+                "test='" + test + '\'' +
+                ", message='" + message + '\'' +
+                ", index=" + index +
+                ", elementFragment=" + elementFragment +
+                '}';
+    }
 }

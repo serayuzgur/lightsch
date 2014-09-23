@@ -5,6 +5,9 @@ import com.mebitech.lightsch.parser.element.Let;
 import com.mebitech.lightsch.parser.element.Rule;
 import com.mebitech.lightsch.parser.element.Schema;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class XPathUtil {
 
     public static String modifyXPath4Vtd(String original) {
@@ -20,6 +23,21 @@ public class XPathUtil {
     }
 
     public static void replaceLetVariables(Schema schema, Rule rule, Assert anAssert) {
+        String innerLet;
+        List<Let> lets = new LinkedList<Let>();
+        lets.addAll(schema.getLets());
+        lets.addAll(rule.getLets());
+        // İterate all and replace variables
+        // replate assert
+        for (Let let : lets) {
+            innerLet = let.getValue();
+            for (Let let1 : lets) {
+                innerLet = innerLet.replaceAll("\\$" + let1.getName(), let1.getValue());
+                let.setValue(innerLet);
+            }
+        }
+
+
         String path = anAssert.getTest();
         for (Let let : schema.getLets()) {
             path = path.replaceAll("\\$" + let.getName(), let.getValue());

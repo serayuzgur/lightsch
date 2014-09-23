@@ -22,4 +22,12 @@ public class Scope {
 	public boolean addLet(Let let){
 		return lets.add(let);
 	}
+
+    @Override
+    public String toString() {
+        return "Scope{" +
+                "title='" + title + '\'' +
+                ", lets=" + lets +
+                '}';
+    }
 }

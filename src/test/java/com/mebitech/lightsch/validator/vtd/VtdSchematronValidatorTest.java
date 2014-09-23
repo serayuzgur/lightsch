@@ -12,8 +12,8 @@ public class VtdSchematronValidatorTest {
 
     @Test
     public void testValidate() throws Exception {
-        Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("testSch.xml"));
-        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("positiveBigData.xml");
+        Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("sch/testSch.xml"));
+        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("sample/positiveBigData.xml");
         List<Assert> failed = new VtdSchematronValidator().validate(schematron, xmlPath);
         assert failed.isEmpty();
 
@@ -24,8 +24,8 @@ public class VtdSchematronValidatorTest {
     public void testBreak() throws Exception {
 
         long start = System.currentTimeMillis();
-        Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("testSch.xml"));
-        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("positiveData.xml");
+        Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("sch/edefter_unsigned_kebir.xml"));
+        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("sample/kebir_unsigned.xml");
         List<Assert> failed = new VtdSchematronValidator().validate(schematron, xmlPath);
         long end = System.currentTimeMillis();
 

@@ -209,9 +209,9 @@
     <!-- <gl-cor:entryHeader> kontrolleri -->
     <pattern id="entryheader">
         <rule context="/edefter:defter/xbrli:xbrl/gl-cor:accountingEntries/gl-cor:entryHeader">
-            <!--<assert test="not(following::node()) or not(following::node()/gl-cor:entryNumberCounter) or not(gl-cor:entryNumberCounter) or following::node()/gl-cor:entryNumberCounter = gl-cor:entryNumberCounter + 1">-->
-            <!--11601 - Yevmiye numarası müteselsil (ardışık) bir değere sahip olmalıdır.-->
-            <!--</assert>-->
+            <assert test="not(following::node()) or not(following::node()/gl-cor:entryNumberCounter) or not(gl-cor:entryNumberCounter) or following::node()/gl-cor:entryNumberCounter = gl-cor:entryNumberCounter + 1">
+            11601 - Yevmiye numarası müteselsil (ardışık) bir değere sahip olmalıdır.
+            </assert>
 
             <!-- Takes too long time or never ends  -->
             <assert test="not(following::node()) or not(following::node()/gl-cor:enteredDate) or not(gl-cor:enteredDate) or translate(following-sibling::node()/gl-cor:enteredDate,'-','') >= translate(gl-cor:enteredDate,'-','')">
@@ -254,9 +254,9 @@
     <pattern id="entrydetail">
         <rule context="/edefter:defter/xbrli:xbrl/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail">
             <assert test="gl-cor:lineNumber">11614 - Yevmiye detay numarası zorunlu bir elemandır.</assert>
-            <!--<assert test="not(following::node()) or not(following::node()/gl-cor:lineNumber) or not(gl-cor:lineNumber) or following::node()/number(gl-cor:lineNumber) = number(gl-cor:lineNumber) + 1">-->
-            <!--11615 - Yevmiye detay numarası müteselsil (ardışık) bir değere sahip olmalıdır.-->
-            <!--</assert>-->
+            <assert test="not(following::node()) or not(following::node()/gl-cor:lineNumber) or not(gl-cor:lineNumber) or following::node()/number(gl-cor:lineNumber) = number(gl-cor:lineNumber) + 1">
+            11615 - Yevmiye detay numarası müteselsil (ardışık) bir değere sahip olmalıdır.
+            </assert>
 
             <assert test="gl-cor:lineNumberCounter">11616 - Yevmiye numarası referans verilen alan zorunlu bir
                 elemandır.

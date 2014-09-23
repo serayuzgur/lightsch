@@ -22,4 +22,12 @@ public class Pattern {
 	public boolean addRule(Rule rule) {
 		return rules.add(rule);
 	}
+
+    @Override
+    public String toString() {
+        return "Pattern{" +
+                "id='" + id + '\'' +
+                ", rules=" + rules +
+                '}';
+    }
 }

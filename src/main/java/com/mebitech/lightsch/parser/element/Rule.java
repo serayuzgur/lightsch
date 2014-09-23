@@ -28,4 +28,12 @@ public class Rule extends Scope {
 
         return asserts.add(assert_);
     }
+
+    @Override
+    public String toString() {
+        return "Rule{" +
+                "context='" + context + '\'' +
+                ", asserts=" + asserts +
+                '}';
+    }
 }
