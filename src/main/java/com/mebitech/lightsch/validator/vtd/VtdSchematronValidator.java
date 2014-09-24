@@ -11,7 +11,6 @@ import org.apache.log4j.Logger;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class VtdSchematronValidator extends SchematronValidator {
     private static final Logger LOGGER = Logger.getLogger(VtdSchematronValidator.class);
@@ -38,7 +37,7 @@ public class VtdSchematronValidator extends SchematronValidator {
 
         List<Assert> asserts = new LinkedList<Assert>();
         VTDGen vg = new VTDGen();
-        LOGGER.debug("Validating...");
+        LOGGER.info("Validating...");
         LOGGER.info("Parsing : " + xmlUrl.getPath());
         if (vg.parseFile(xmlUrl.getPath(), true)) {
             VTDNav vn = vg.getNav();
@@ -50,9 +49,9 @@ public class VtdSchematronValidator extends SchematronValidator {
             //Traverse  patterns
             LOGGER.info("Checking Started...");
             for (Pattern pattern : schematron.getSchema().getPatterns()) {
-                LOGGER.debug("Pattern Name : " + pattern.getId());
+                LOGGER.info("Pattern Name : " + pattern.getId());
                 for (Rule rule : pattern.getRules()) {
-                    LOGGER.debug("Evaluating Xpath Expression : " + rule.getContext());
+                    LOGGER.info("Evaluating Xpath Expression : " + rule.getContext());
                     try {
                         ap.selectXPath(rule.getContext());
                     } catch (XPathParseException e) {
@@ -99,11 +98,6 @@ public class VtdSchematronValidator extends SchematronValidator {
             // tests given expression
             if (!ap2.evalXPathToBoolean()) {
                 // Error occurred if we are here
-                LOGGER.info("*******************************  ERROR XML ************************************");
-                LOGGER.error(new String(vn.getElementFragmentNs().toBytes()));
-                LOGGER.error(anAssert.getMessage());
-                LOGGER.error(anAssert.getMessage());
-                LOGGER.info("*********************************************************************************");
                 anAssert.setElementFragment(vn.getElementFragment());
                 anAssert.setIndex(index);
                 asserts.add(anAssert);
