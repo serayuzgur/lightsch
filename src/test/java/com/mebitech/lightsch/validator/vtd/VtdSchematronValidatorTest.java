@@ -10,14 +10,14 @@ import java.util.List;
 
 public class VtdSchematronValidatorTest {
 
-    //TODO: Saxon will be handle in revivision 2
-//    @Test
-//    public void testValidate() throws Exception {
-//        Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("sch/testSch.xml"));
-//        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("sample/positiveBigData.xml");
-//        List<Assert> failed = new VtdSchematronValidator().validate(schematron, xmlPath);
-//        assert failed.isEmpty();
-//    }
+
+    @Test
+    public void testValidate() throws Exception {
+        Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("sch/testSch.xml"));
+        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("sample/positiveBigData.xml");
+        List<Assert> failed = new VtdSchematronValidator().validate(schematron, xmlPath);
+        assert failed.isEmpty();
+    }
 
     @Test
     public void testBreak() throws Exception {
