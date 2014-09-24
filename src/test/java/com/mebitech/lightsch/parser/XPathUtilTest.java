@@ -7,7 +7,7 @@ public class XPathUtilTest {
 	@Test
 	public void testConvertMatchesToStringLength() throws Exception {
 		String xpath = "matches(normalize-space(.) , '^[0-9]{10,11}$')";
-		String replaced = "string-length(normalize-space(.)) >= 10 and string-length(normalize-space(.)) <= 11  ";
+		String replaced = "string-length(normalize-space(.)) >= 10 and string-length(normalize-space(.)) <= 11";
 		assert XPathUtil.convertMatchesToStringLength(xpath).equals(replaced);
 
 	}

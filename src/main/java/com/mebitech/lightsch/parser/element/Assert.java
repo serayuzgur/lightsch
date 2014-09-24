@@ -22,7 +22,7 @@ public class Assert {
     public String normalizeXPath(String test) {
         //Open with VTD
 //		test = XPathUtil.convertMatchesToStringLength(test);
-//		test = XPathUtil.removeFuncInPaths(test);
+		test = XPathUtil.removeFuncInPaths(test);
         test = XPathUtil.wrapWithNotFunc(test);
         return test;
     }

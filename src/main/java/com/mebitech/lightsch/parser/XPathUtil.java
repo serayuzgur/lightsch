@@ -19,7 +19,9 @@ public class XPathUtil {
     }
 
     public static String modifyXPath4Saxon(String original) {
-        return XPathUtil.wrapWithNotFunc(original);
+        //not function doesn't work for now
+//        return XPathUtil.wrapWithNotFunc(original);
+        return original;
     }
 
     public static void replaceLetVariables(Schema schema, Rule rule, Assert anAssert) {

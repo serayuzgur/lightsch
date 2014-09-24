@@ -213,7 +213,6 @@
             11601 - Yevmiye numarası müteselsil (ardışık) bir değere sahip olmalıdır.
             </assert>
 
-            <!-- Takes too long time or never ends  -->
             <assert test="not(following::node()) or not(following::node()/gl-cor:enteredDate) or not(gl-cor:enteredDate) or translate(following-sibling::node()/gl-cor:enteredDate,'-','') >= translate(gl-cor:enteredDate,'-','')">
                 11602 - Yevmiye defteri tarihe göre sıralı olmalıdır.
             </assert>
