@@ -38,7 +38,7 @@
                 <gl-cor:entriesComment contextRef="journal_context">2011-06-01 / 2011-07-01 arası Kurum Unvanı firmasına ait Yevmiye Defteri
                 </gl-cor:entriesComment>
                 <gl-cor:periodCoveredStart contextRef="journal_context">2011-06-01</gl-cor:periodCoveredStart>
-                <gl-cor:periodCoveredEnd contextRef="journal_context">2011-07-01</gl-cor:periodCoveredEnd>
+                <gl-cor:periodCoveredEnd contextRef="journal_context">2011-06-31</gl-cor:periodCoveredEnd>
                 <gl-bus:sourceApplication contextRef="journal_context">6130734288##MEBITECH BİLİŞİM BİLGİSAYAR HİZ. DAN. SAN.TİC. LTD.
                     ŞTİ.##Medy##1.0.0
                 </gl-bus:sourceApplication>

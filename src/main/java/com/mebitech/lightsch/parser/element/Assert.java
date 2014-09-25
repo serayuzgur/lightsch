@@ -3,13 +3,16 @@ package com.mebitech.lightsch.parser.element;
 import com.mebitech.lightsch.parser.XPathUtil;
 import org.xml.sax.Attributes;
 
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
+
 public class Assert {
     private String test;
     private String message;
-    private int index;
     // long representation of location of the xml elemnt
     // first 32 bit is starting offset and second 32 bit is length of the element
-    private long elementFragment;
+    private List<Long> errElementFragmentList = new LinkedList<Long>();
 
     public Assert(Attributes attributes) {
         this(attributes.getValue("test"));
@@ -22,7 +25,7 @@ public class Assert {
     public String normalizeXPath(String test) {
         //Open with VTD
 //		test = XPathUtil.convertMatchesToStringLength(test);
-		test = XPathUtil.removeFuncInPaths(test);
+        test = XPathUtil.removeFuncInPaths(test);
         test = XPathUtil.wrapWithNotFunc(test);
         return test;
     }
@@ -43,20 +46,17 @@ public class Assert {
         this.message = message;
     }
 
-    public int getIndex() {
-        return index;
+
+    public List<Long> getErrElementFragmentList() {
+        return errElementFragmentList;
     }
 
-    public void setIndex(int index) {
-        this.index = index;
+    public void setErrElementFragmentList(List<Long> errElementFragmentList) {
+        this.errElementFragmentList = errElementFragmentList;
     }
 
-    public long getElementFragment() {
-        return elementFragment;
-    }
-
-    public void setElementFragment(long elementFragment) {
-        this.elementFragment = elementFragment;
+    public void addErrtoElementFragmentList(long elementFragment) {
+        errElementFragmentList.add(elementFragment);
     }
 
 
@@ -65,8 +65,7 @@ public class Assert {
         return "Assert{" +
                 "test='" + test + '\'' +
                 ", message='" + message + '\'' +
-                ", index=" + index +
-                ", elementFragment=" + elementFragment +
+                ", errElementFragmentList=" + errElementFragmentList +
                 '}';
     }
 }

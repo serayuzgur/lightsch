@@ -60,8 +60,8 @@ public class VtdSchematronValidator extends SchematronValidator {
                     for (Assert anAssert : rule.getAsserts()) {
                         XPathUtil.replaceLetVariables(schematron.getSchema(), rule, anAssert);
                         anAssert.setTest(XPathUtil.modifyXPath4Vtd(anAssert.getTest()));
-                        List<Assert> asserts_ = doTest(ap, ap2, vn, anAssert);
-                        asserts.addAll(asserts_);
+                        doTest(ap, ap2, vn, anAssert);
+                        asserts.add(anAssert);
                         ap.resetXPath();
                     }
                 }
@@ -82,27 +82,23 @@ public class VtdSchematronValidator extends SchematronValidator {
      * @param anAssert meaningless, just for log and assert list, could be remove later
      * @return A list with full of errors.
      */
-    private List<Assert> doTest(AutoPilot ap, AutoPilot ap2, VTDNav vn, Assert anAssert) throws NavException, XPathEvalException {
-        List<Assert> asserts = new LinkedList<Assert>();
-        int index;
+    private Assert doTest(AutoPilot ap, AutoPilot ap2, VTDNav vn, Assert anAssert) throws NavException, XPathEvalException {
         // Just finds specified path and moves vn to there
         try {
             ap2.selectXPath(anAssert.getTest());
         } catch (XPathParseException e) {
-            asserts.add(anAssert);
+            anAssert.addErrtoElementFragmentList(vn.getElementFragment());
             LOGGER.error(e.getMessage());
-            return asserts;
+            return anAssert;
         }
-
-        while ((index = ap.evalXPath()) != -1) {
+        while (ap.evalXPath() != -1) {
             // tests given expression
             if (!ap2.evalXPathToBoolean()) {
                 // Error occurred if we are here
-                anAssert.setElementFragment(vn.getElementFragment());
-                anAssert.setIndex(index);
-                asserts.add(anAssert);
+                anAssert.addErrtoElementFragmentList(vn.getElementFragment());
             }
         }
-        return asserts;
+
+        return anAssert;
     }
 }

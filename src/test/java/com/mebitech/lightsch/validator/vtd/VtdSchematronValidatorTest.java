@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import java.net.URL;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class VtdSchematronValidatorTest {
 
@@ -15,26 +16,29 @@ public class VtdSchematronValidatorTest {
     public void testValidate() throws Exception {
         Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("sch/testSch.xml"));
         URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("sample/positiveData.xml");
-        List<Assert> failed = new VtdSchematronValidator().validate(schematron, xmlPath);
-        assert failed.isEmpty();
+        List<Assert> asserts = new VtdSchematronValidator().validate(schematron, xmlPath);
+        for (Assert anAssert : asserts) {
+            assert (anAssert.getErrElementFragmentList().isEmpty());
+        }
     }
 
     @Test
     public void testBreak() throws Exception {
 
         long start = System.currentTimeMillis();
-        Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("sch/edefter_berat.xml"));
-        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("sample/kebir_berat.xml");
-        List<Assert> failed = new VtdSchematronValidator().validate(schematron, xmlPath);
+        Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("sch/testSch.xml"));
+        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("sample/positiveBigData.xml");
+        List<Assert> asserts = new VtdSchematronValidator().validate(schematron, xmlPath);
         long end = System.currentTimeMillis();
-
-
-        System.out.println("\n\n*******************************************************************");
-        System.out.println("Failed Size: " + failed.size() + " finished in : " + (end - start) + " miliseconds ");
-        System.out.println("*******************************************************************\n\n");
-        for (Assert assert4 : failed) {
-            System.out.println("Message  : " + assert4.getMessage() + " Test : " + assert4.getTest() + " Index : " + assert4.getIndex() + " Element Fragment Index :  " + assert4.getElementFragment());
+        for (Assert anAssert : asserts) {
+            List<Long> errLocations = anAssert.getErrElementFragmentList();
+            if (!errLocations.isEmpty()) {
+                System.out.println("******************************************************");
+                System.out.println("Failed assert : " + anAssert.getTest() + "\n Error locations : " + errLocations.toString());
+                System.out.println("******************************************************");
+            }
         }
+        System.out.println("Finished in : " + (end - start));
 
     }
 
