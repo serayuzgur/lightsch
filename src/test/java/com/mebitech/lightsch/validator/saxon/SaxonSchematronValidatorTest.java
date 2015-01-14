@@ -24,7 +24,7 @@ public class SaxonSchematronValidatorTest {
     public void testBreak() throws Exception {
 
         Schematron schematron = SchematronParser.parse(SaxonSchematronValidatorTest.class.getClassLoader().getResourceAsStream("sch/testSch.xml"));
-        URL xmlPath = SaxonSchematronValidatorTest.class.getClassLoader().getResource("sample/positiveData.xml");
+        URL xmlPath = SaxonSchematronValidatorTest.class.getClassLoader().getResource("sample/negativeData.xml");
         List<Assert> failed = new SaxonSchematronValidator().validate(schematron, xmlPath);
 
         System.out.println("\n\n*******************************************************************");

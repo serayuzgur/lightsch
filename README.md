@@ -1,7 +1,7 @@
 # lightsch
 ---
 
-Fast, Light Schematron Validator. We use SAX Parser for parsing [Schematron](http://www.schematron.com/) and [VTD-XML](http://vtd-xml.sourceforge.net/) for processing XPATH expressions.
+Fast, Light Schematron Validator. We use SAX Parser for parsing [Schematron](http://www.schematron.com/) and [VTD-XML](http://vtd-xml.sourceforge.net/) & [SAXON](http://www.saxonica.com/) for processing XPATH expressions.
 
 ## Motivation
 Our main motivation is to create a library which is faster and lighter than its competitors. Nowadays It is incredible hard and slow to work with large XML and SCH files. According to us a good validator must have some main features to work with all scenarios.
@@ -17,11 +17,10 @@ These main features are,
 
 
 ## License
-License will maybe change later according to the helper libs. But be sure that it will be free as a bird.
+License will maybe change later according to the helper libs.
 
 
 ## Status
-* Tests are broken **We will fix them after we decide XPath Processor.**
 * Added SAXON validator for XPath2.0 support
 * VTD-XML Hacks.
   * Variable declarations on VTD-XML is  (maybe) not working so we put a string replacer for *<let>* declarations. __*(see: com.mebitech.lightsch.validator.vtd.VtdSchematronValidator.replaceLetVariables())*__

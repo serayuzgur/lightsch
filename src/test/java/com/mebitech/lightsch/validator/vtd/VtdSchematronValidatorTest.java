@@ -27,7 +27,7 @@ public class VtdSchematronValidatorTest {
 
         long start = System.currentTimeMillis();
         Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("sch/testSch.xml"));
-        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("sample/positiveBigData.xml");
+        URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("sample/negativeData.xml");
         List<Assert> asserts = new VtdSchematronValidator().validate(schematron, xmlPath);
         long end = System.currentTimeMillis();
         for (Assert anAssert : asserts) {
