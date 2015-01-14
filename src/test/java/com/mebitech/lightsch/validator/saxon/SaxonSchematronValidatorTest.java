@@ -9,17 +9,17 @@ import java.net.URL;
 import java.util.List;
 
 public class SaxonSchematronValidatorTest {
-// TODO: Saxon validator will handle later
-//    @Test
-//    public void testValidate() throws Exception {
-//        Schematron schematron = SchematronParser.parse(SaxonSchematronValidatorTest.class.getClassLoader().getResourceAsStream("sch/testSch.xml"));
-//        URL xmlPath = SaxonSchematronValidatorTest.class.getClassLoader().getResource("sample/positiveData.xml");
-//        List<Assert> failed = new SaxonSchematronValidator().validate(schematron, xmlPath);
-//        assert failed.isEmpty();
-//
-//
-//    }
-//
+    @Test
+    public void testValidate() throws Exception {
+        Schematron schematron = SchematronParser.parse(SaxonSchematronValidatorTest.class.getClassLoader().getResourceAsStream("sch/testSch.xml"));
+        URL xmlPath = SaxonSchematronValidatorTest.class.getClassLoader().getResource("sample/positiveData.xml");
+        List<Assert> failed = new SaxonSchematronValidator().validate(schematron, xmlPath);
+
+        assert failed.isEmpty();
+
+
+    }
+
     @Test
     public void testBreak() throws Exception {
 

@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import java.net.URL;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class VtdSchematronValidatorTest {
 
@@ -17,6 +16,7 @@ public class VtdSchematronValidatorTest {
         Schematron schematron = SchematronParser.parse(VtdSchematronValidatorTest.class.getClassLoader().getResourceAsStream("sch/testSch.xml"));
         URL xmlPath = VtdSchematronValidatorTest.class.getClassLoader().getResource("sample/positiveData.xml");
         List<Assert> asserts = new VtdSchematronValidator().validate(schematron, xmlPath);
+
         for (Assert anAssert : asserts) {
             assert (anAssert.getErrElementFragmentList().isEmpty());
         }

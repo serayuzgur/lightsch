@@ -12,8 +12,8 @@ public class Rule extends Scope {
     }
 
     public void setContext(String context) {
-        if (context.equals("*"))
-            context = "//" + context;
+//        if (context.equals("*"))
+//            context = "//" + context;
         this.context = context;
     }
 
@@ -23,8 +23,8 @@ public class Rule extends Scope {
 
     public boolean addAssert(Assert assert_) {
 
-        if (!getContext().equals("/"))
-            assert_.setTest(assert_.getTest());
+//        if (!getContext().equals("/"))
+//            assert_.setTest(assert_.getTest());
 
         return asserts.add(assert_);
     }
